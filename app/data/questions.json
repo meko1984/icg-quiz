@@ -1,0 +1,2822 @@
+[
+  {
+    "id": "icg-001",
+    "number": 1,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "感染成立に必要な6つの要素として正しい組み合わせはどれか。",
+    "correct": "病原体、病原性、病原体の量、感受性のある宿主、侵入門戸、伝播経路",
+    "distractors": [
+      "病原体、病原性、病原体の量、感受性のある宿主、侵入門戸、手指衛生",
+      "病原体、病原性、病原体の量、免疫のある宿主、侵入門戸、伝播経路",
+      "病原体、病原性、感受性のある宿主、侵入門戸、伝播経路、感染経路別予防策"
+    ],
+    "explanation": "感染成立にはこの6要素が連鎖して関与する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-002",
+    "number": 2,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "感染を引き起こす微生物を指す要素はどれか。",
+    "correct": "病原体",
+    "distractors": [
+      "病原性",
+      "病原体の量",
+      "感受性のある宿主"
+    ],
+    "explanation": "病原体は感染の原因となる微生物である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-003",
+    "number": 3,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "病原体が感染や疾患を引き起こす力を指す要素はどれか。",
+    "correct": "病原性",
+    "distractors": [
+      "病原体",
+      "病原体の量",
+      "感受性のある宿主"
+    ],
+    "explanation": "病原性は病原体の力を示す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-004",
+    "number": 4,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "感染成立に十分な量が必要で、病原体ごとに異なる要素はどれか。",
+    "correct": "病原体の量",
+    "distractors": [
+      "病原体",
+      "病原性",
+      "感受性のある宿主"
+    ],
+    "explanation": "病原体の量も感染成立に関わる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-005",
+    "number": 5,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "感染を起こしやすい状態にある人を指す要素はどれか。",
+    "correct": "感受性のある宿主",
+    "distractors": [
+      "病原体",
+      "病原性",
+      "病原体の量"
+    ],
+    "explanation": "免疫状態などにより感染を受けやすい宿主を指す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-006",
+    "number": 6,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "病原体が体内へ入る経路を指す要素はどれか。",
+    "correct": "侵入門戸",
+    "distractors": [
+      "病原体",
+      "病原性",
+      "病原体の量"
+    ],
+    "explanation": "侵入門戸は病原体が体内へ入る入り口である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-007",
+    "number": 7,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "接触感染、飛沫感染、空気感染が含まれる要素はどれか。",
+    "correct": "伝播経路",
+    "distractors": [
+      "病原体",
+      "病原性",
+      "病原体の量"
+    ],
+    "explanation": "伝播経路は病原体が広がる経路である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-008",
+    "number": 8,
+    "lecture": 1,
+    "category": "感染成立",
+    "question": "感染対策の基本原理として最も適切なのはどれか。",
+    "correct": "感染の連鎖のどこか一つを断ち切る",
+    "distractors": [
+      "感染源を特定できた場合に限って対策を行う",
+      "病原体を完全に除去することだけを目標にする",
+      "感染者への対策だけを行い、ほかの連鎖要素には介入しない"
+    ],
+    "explanation": "連鎖の一部を断つことで感染成立を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-009",
+    "number": 9,
+    "lecture": 1,
+    "category": "2本の柱",
+    "question": "感染対策を支える2本の柱はどれか。",
+    "correct": "標準予防策と感染経路別予防策",
+    "distractors": [
+      "手指衛生と環境清掃",
+      "洗浄と滅菌",
+      "清潔リネン管理と医療廃棄物管理"
+    ],
+    "explanation": "この2つを組み合わせて感染リスクを低減する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-010",
+    "number": 10,
+    "lecture": 1,
+    "category": "2本の柱",
+    "question": "すべての患者に常に実施する基本的な感染対策はどれか。",
+    "correct": "標準予防策",
+    "distractors": [
+      "接触予防策",
+      "飛沫予防策",
+      "空気予防策"
+    ],
+    "explanation": "診断名に関係なくすべての患者に適用する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-011",
+    "number": 11,
+    "lecture": 1,
+    "category": "2本の柱",
+    "question": "特定の患者や病原体の特性に応じて追加する対策はどれか。",
+    "correct": "感染経路別予防策",
+    "distractors": [
+      "標準予防策",
+      "手指衛生のみ",
+      "すべての患者へのPPE常時着用"
+    ],
+    "explanation": "標準予防策に追加して行う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-012",
+    "number": 12,
+    "lecture": 1,
+    "category": "2本の柱",
+    "question": "標準予防策の性質を最も適切に表す比喩はどれか。",
+    "correct": "常に構えておくべき強固な盾",
+    "distractors": [
+      "病原体ごとに交換する追加フィルター",
+      "感染が疑われたときだけ構える盾",
+      "曝露後に追加する防護フィルター"
+    ],
+    "explanation": "標準予防策は常時実施する基本対策である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-013",
+    "number": 13,
+    "lecture": 1,
+    "category": "2本の柱",
+    "question": "感染経路別予防策の性質を最も適切に表す比喩はどれか。",
+    "correct": "病原体の特性に合わせて追加するフィルター",
+    "distractors": [
+      "常に構えておくべき強固な盾",
+      "すべての患者に同じ条件でかけるフィルター",
+      "感染が確定してから追加するフィルター"
+    ],
+    "explanation": "感染経路に応じて追加する対策である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-014",
+    "number": 14,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策の対象として最も適切なのはどれか。",
+    "correct": "すべての患者",
+    "distractors": [
+      "感染症と診断された患者だけ",
+      "免疫不全の患者だけ",
+      "血液検査で陽性となった患者だけ"
+    ],
+    "explanation": "標準予防策は、診断名や感染症の有無にかかわらず、すべての患者に適用する基本的な感染対策である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-015",
+    "number": 15,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策で感染性があるものとして扱う対象はどれか。",
+    "correct": "血液や体液",
+    "distractors": [
+      "血液だけ",
+      "目に見える汚染がある体液だけ",
+      "感染症と診断された患者の体液だけ"
+    ],
+    "explanation": "血液、体液、分泌物、排泄物などは感染性があるものとして扱う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-016",
+    "number": 16,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策で注意して扱う身体部位はどれか。",
+    "correct": "粘膜や損傷した皮膚",
+    "distractors": [
+      "健常な皮膚",
+      "毛髪や爪",
+      "衣服で覆われた健常な皮膚"
+    ],
+    "explanation": "粘膜や損傷した皮膚は感染リスクに関わるため、標準予防策の対象として扱う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-017",
+    "number": 17,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策に含まれる基本行動はどれか。",
+    "correct": "手指衛生",
+    "distractors": [
+      "全患者の個室隔離",
+      "すべての処置での滅菌手袋着用",
+      "患者ごとの予防的な抗菌薬投与"
+    ],
+    "explanation": "手指衛生は標準予防策の中心となる基本行動である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-018",
+    "number": 18,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "血液や体液曝露リスクがある場面で標準予防策として行うことはどれか。",
+    "correct": "必要なPPEの使用",
+    "distractors": [
+      "飛散の程度にかかわらず手袋だけを着用する",
+      "処置後に必要だったPPEを判断する",
+      "手指衛生を行えばPPEは省略できる"
+    ],
+    "explanation": "曝露リスクに応じて手袋、ガウン、マスク、ゴーグルなどを使用する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-019",
+    "number": 19,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策に含まれる針や鋭利物への対応として適切なのはどれか。",
+    "correct": "針刺し防止",
+    "distractors": [
+      "飛沫の吸入防止",
+      "汚染リネンの漏出防止",
+      "水回りの湿潤環境防止"
+    ],
+    "explanation": "針や鋭利物は安全に取り扱い、針刺しを防止する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-020",
+    "number": 20,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策について正しい説明はどれか。",
+    "correct": "患者の診断名に関係なく実施する",
+    "distractors": [
+      "感染症と診断された患者だけに実施する",
+      "症状がある患者だけに実施する",
+      "検査結果が判明してから実施する"
+    ],
+    "explanation": "感染症と診断されていない患者にも標準予防策を行う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-021",
+    "number": 21,
+    "lecture": 1,
+    "category": "標準予防策",
+    "question": "標準予防策の考え方として適切なのはどれか。",
+    "correct": "感染性があるものとして扱う",
+    "distractors": [
+      "見た目が清潔なら感染性はないものとして扱う",
+      "検査陰性なら体液を素手で扱う",
+      "感染症名が確定するまで対策を行わない"
+    ],
+    "explanation": "血液や体液などを感染性があるものとして扱うことで、未知の感染リスクにも備える。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-022",
+    "number": 22,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "伝播経路のうち、手指や環境表面を介して広がるものはどれか。",
+    "correct": "接触感染",
+    "distractors": [
+      "飛沫感染",
+      "空気感染",
+      "接触感染と飛沫感染"
+    ],
+    "explanation": "接触感染では、手指や器具、環境表面を介した伝播が問題となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-023",
+    "number": 23,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "咳やくしゃみの飛沫で広がる伝播経路はどれか。",
+    "correct": "飛沫感染",
+    "distractors": [
+      "接触感染",
+      "空気感染",
+      "接触感染と飛沫感染"
+    ],
+    "explanation": "飛沫感染は、咳やくしゃみなどで発生する飛沫を介して広がる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-024",
+    "number": 24,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "空気中に浮遊する粒子で広がる伝播経路はどれか。",
+    "correct": "空気感染",
+    "distractors": [
+      "接触感染",
+      "飛沫感染",
+      "接触感染と飛沫感染"
+    ],
+    "explanation": "空気感染では、空気中に浮遊する粒子を介した伝播が問題となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-025",
+    "number": 25,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "接触感染が疑われる場合に追加する予防策はどれか。",
+    "correct": "接触予防策",
+    "distractors": [
+      "飛沫予防策",
+      "空気予防策",
+      "標準予防策のみ"
+    ],
+    "explanation": "接触感染リスクがある場合は、標準予防策に接触予防策を追加する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-026",
+    "number": 26,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "飛沫感染が疑われる場合に追加する予防策はどれか。",
+    "correct": "飛沫予防策",
+    "distractors": [
+      "接触予防策",
+      "空気予防策",
+      "標準予防策のみ"
+    ],
+    "explanation": "飛沫感染リスクがある場合は、標準予防策に飛沫予防策を追加する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-027",
+    "number": 27,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "空気感染が疑われる場合に追加する予防策はどれか。",
+    "correct": "空気予防策",
+    "distractors": [
+      "接触予防策",
+      "飛沫予防策",
+      "標準予防策のみ"
+    ],
+    "explanation": "空気感染リスクがある場合は、標準予防策に空気予防策を追加する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-028",
+    "number": 28,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "感染経路別予防策の基本的な位置づけはどれか。",
+    "correct": "標準予防策に追加して行う",
+    "distractors": [
+      "標準予防策の代わりに行う",
+      "病原体が確定してから標準予防策なしで行う",
+      "すべての患者へ同じ感染経路別予防策を追加する"
+    ],
+    "explanation": "感染経路別予防策は標準予防策の代わりではなく、必要時に追加する対策である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-029",
+    "number": 29,
+    "lecture": 1,
+    "category": "感染経路クイズ",
+    "question": "感染経路を確認する目的として適切なのはどれか。",
+    "correct": "病原体の広がり方に応じた対策を選ぶ",
+    "distractors": [
+      "病原体に使用する消毒薬の濃度を決める",
+      "患者へ投与する抗菌薬を決める",
+      "標準予防策を省略できるか判断する"
+    ],
+    "explanation": "接触、飛沫、空気などの経路に応じて追加対策を選択する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-030",
+    "number": 30,
+    "lecture": 1,
+    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "question": "手指衛生5 MomentsのMoment 1はどれか。",
+    "correct": "患者に触れる前",
+    "distractors": [
+      "清潔操作または無菌操作の前",
+      "体液曝露リスクの後",
+      "患者に触れた後"
+    ],
+    "explanation": "患者へ微生物を持ち込まないために行う。",
+    "sourceType": "exam-extra"
+  },
+  {
+    "id": "icg-031",
+    "number": 31,
+    "lecture": 1,
+    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "question": "手指衛生5 MomentsのMoment 2はどれか。",
+    "correct": "清潔操作または無菌操作の前",
+    "distractors": [
+      "患者に触れる前",
+      "体液曝露リスクの後",
+      "患者に触れた後"
+    ],
+    "explanation": "清潔操作前に手指衛生を行う。",
+    "sourceType": "exam-extra"
+  },
+  {
+    "id": "icg-032",
+    "number": 32,
+    "lecture": 1,
+    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "question": "手指衛生5 MomentsのMoment 3はどれか。",
+    "correct": "体液曝露リスクの後",
+    "distractors": [
+      "患者に触れる前",
+      "清潔操作または無菌操作の前",
+      "患者に触れた後"
+    ],
+    "explanation": "血液や体液に触れた可能性がある後に行う。",
+    "sourceType": "exam-extra"
+  },
+  {
+    "id": "icg-033",
+    "number": 33,
+    "lecture": 1,
+    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "question": "手指衛生5 MomentsのMoment 4はどれか。",
+    "correct": "患者に触れた後",
+    "distractors": [
+      "患者に触れる前",
+      "清潔操作または無菌操作の前",
+      "体液曝露リスクの後"
+    ],
+    "explanation": "患者接触後の伝播を防ぐ。",
+    "sourceType": "exam-extra"
+  },
+  {
+    "id": "icg-034",
+    "number": 34,
+    "lecture": 1,
+    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "question": "手指衛生5 MomentsのMoment 5はどれか。",
+    "correct": "患者周辺環境に触れた後",
+    "distractors": [
+      "患者に触れる前",
+      "清潔操作または無菌操作の前",
+      "体液曝露リスクの後"
+    ],
+    "explanation": "患者に直接触れていなくても必要である。",
+    "sourceType": "exam-extra"
+  },
+  {
+    "id": "icg-035",
+    "number": 35,
+    "lecture": 1,
+    "category": "手指衛生",
+    "question": "手袋を外した後の手指衛生について正しいのはどれか。",
+    "correct": "手袋を外した後も手指衛生が必要",
+    "distractors": [
+      "手袋に破損がなければ手指衛生は不要",
+      "同じ患者への処置なら手指衛生は不要",
+      "手袋の表面を消毒すれば手指衛生は不要"
+    ],
+    "explanation": "手袋は手指衛生の代わりにならない。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-036",
+    "number": 36,
+    "lecture": 1,
+    "category": "手指衛生",
+    "question": "目に見える汚れがある場合に重視する手指衛生はどれか。",
+    "correct": "流水と石けんによる手洗い",
+    "distractors": [
+      "アルコール擦式手指消毒だけを行う",
+      "流水だけで短時間すすぐ",
+      "手袋を交換するだけにする"
+    ],
+    "explanation": "汚れがある場合は物理的な洗浄が重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-037",
+    "number": 37,
+    "lecture": 1,
+    "category": "手指衛生",
+    "question": "芽胞形成菌が関与する場合に重視する手指衛生はどれか。",
+    "correct": "流水と石けんによる手洗い",
+    "distractors": [
+      "アルコール擦式手指消毒だけを行う",
+      "アルコール擦式手指消毒を2回続けて行う",
+      "手袋を交換して手指衛生は省略する"
+    ],
+    "explanation": "芽胞そのものにはアルコール擦式手指消毒薬が効きにくい。C. difficileなどでは、施設手順や流行状況に応じて流水と石けんによる物理的除去を重視する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-038",
+    "number": 38,
+    "lecture": 1,
+    "category": "手指衛生",
+    "question": "アルコール擦式消毒で重要な方法はどれか。",
+    "correct": "手指全体に行き渡らせ、乾くまで擦り込む",
+    "distractors": [
+      "手のひらを中心に塗布し、乾く前に拭き取る",
+      "少量を指先だけに塗布し、自然乾燥させる",
+      "手指全体に塗布した後、乾く前に手袋を装着する"
+    ],
+    "explanation": "十分な範囲と時間が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-039",
+    "number": 39,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "Spaulding分類を用いる目的はどれか。",
+    "correct": "器材の接触部位と感染リスクに応じて滅菌・消毒方法を選ぶ",
+    "distractors": [
+      "器材の接触部位だけで処理方法を選ぶ",
+      "感染リスクだけで器材を分類する",
+      "器材の材質と使用頻度だけで処理方法を選ぶ"
+    ],
+    "explanation": "器材処理の判断に用いる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-040",
+    "number": 40,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "無菌組織や血管系に挿入する器材はどれに分類されるか。",
+    "correct": "クリティカル",
+    "distractors": [
+      "セミクリティカル",
+      "ノンクリティカル",
+      "クリティカルとセミクリティカルの両方"
+    ],
+    "explanation": "原則として滅菌が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-041",
+    "number": 41,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "クリティカル器材の具体例はどれか。",
+    "correct": "手術用器械、インプラント器材、針",
+    "distractors": [
+      "人工呼吸器回路、麻酔関連器材、内視鏡、口腔用体温計",
+      "血圧計カフ、聴診器、モニター、床、ドアノブ",
+      "手術用器械、内視鏡、聴診器"
+    ],
+    "explanation": "無菌組織や血管系に関わる器材である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-042",
+    "number": 42,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "クリティカル器材の原則的な対応方法はどれか。",
+    "correct": "滅菌",
+    "distractors": [
+      "高水準消毒",
+      "中水準または低水準消毒",
+      "清拭消毒または低水準消毒"
+    ],
+    "explanation": "感染リスクが高いため滅菌が原則である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-043",
+    "number": 43,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "粘膜または創のある皮膚と接触する器材はどれに分類されるか。",
+    "correct": "セミクリティカル",
+    "distractors": [
+      "クリティカル",
+      "ノンクリティカル",
+      "クリティカルとセミクリティカルの両方"
+    ],
+    "explanation": "一般に高水準消毒が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-044",
+    "number": 44,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "セミクリティカル器材の具体例はどれか。",
+    "correct": "人工呼吸器回路、麻酔関連器材、内視鏡、口腔用体温計",
+    "distractors": [
+      "手術用器械、インプラント器材、針",
+      "血圧計カフ、聴診器、モニター、床、ドアノブ",
+      "手術用器械、内視鏡、聴診器"
+    ],
+    "explanation": "粘膜や創のある皮膚に接触する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-045",
+    "number": 45,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "セミクリティカル器材の一般的な対応方法はどれか。",
+    "correct": "高水準消毒",
+    "distractors": [
+      "滅菌",
+      "中水準または低水準消毒",
+      "清拭消毒または低水準消毒"
+    ],
+    "explanation": "粘膜に接触するため高水準消毒が基本となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-046",
+    "number": 46,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "健常な皮膚に接触する器具や環境表面はどれに分類されるか。",
+    "correct": "ノンクリティカル",
+    "distractors": [
+      "クリティカル",
+      "セミクリティカル",
+      "クリティカルとセミクリティカルの両方"
+    ],
+    "explanation": "感染リスクは比較的低い。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-047",
+    "number": 47,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "ノンクリティカル器材の具体例はどれか。",
+    "correct": "血圧計カフ、聴診器、モニター、床、ドアノブ",
+    "distractors": [
+      "手術用器械、インプラント器材、針",
+      "人工呼吸器回路、麻酔関連器材、内視鏡、口腔用体温計",
+      "手術用器械、内視鏡、聴診器"
+    ],
+    "explanation": "健常な皮膚や環境表面に関わる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-048",
+    "number": 48,
+    "lecture": 1,
+    "category": "Spaulding分類",
+    "question": "ノンクリティカル器材の対応方法はどれか。",
+    "correct": "清拭消毒または低水準消毒",
+    "distractors": [
+      "滅菌",
+      "高水準消毒",
+      "中水準または低水準消毒"
+    ],
+    "explanation": "環境表面などでは清拭消毒や低水準消毒を行う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-049",
+    "number": 49,
+    "lecture": 1,
+    "category": "消毒水準",
+    "question": "高水準消毒薬に分類される薬剤はどれか。",
+    "correct": "グルタラール、フタラール、過酢酸",
+    "distractors": [
+      "次亜塩素酸ナトリウム、アルコール類、ポビドンヨード",
+      "第四級アンモニウム塩、クロルヘキシジングルコン酸塩、両性界面活性剤",
+      "グルタラール、アルコール類、両性界面活性剤"
+    ],
+    "explanation": "高水準消毒薬の代表例である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-050",
+    "number": 50,
+    "lecture": 1,
+    "category": "消毒水準",
+    "question": "消毒薬使用時に重要な時間管理はどれか。",
+    "correct": "規定の接触時間や浸漬時間を守る",
+    "distractors": [
+      "接触直後に拭き取る",
+      "時間を測らず見た目で判断する",
+      "規定時間より短くして濃度を上げる"
+    ],
+    "explanation": "消毒効果を得るためには時間管理が重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-051",
+    "number": 51,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "高水準消毒薬の特徴として正しいのはどれか。",
+    "correct": "強力だが取り扱いに注意が必要",
+    "distractors": [
+      "規定濃度なら生体にも使用できる",
+      "短時間の接触で滅菌と同じ効果が得られる",
+      "適切な濃度なら換気やPPEは省略できる"
+    ],
+    "explanation": "曝露や材質、対象に注意して使用する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-052",
+    "number": 52,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "グルタラールの取り扱いで重要なのはどれか。",
+    "correct": "蒸気曝露、眼・皮膚への付着に注意し、十分に換気する",
+    "distractors": [
+      "手袋を着用すれば換気は行わなくてよい",
+      "換気を行えば眼の保護は行わなくてよい",
+      "短時間の使用なら開放容器で取り扱ってよい"
+    ],
+    "explanation": "グルタラールは取り扱い時の曝露対策が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-053",
+    "number": 53,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "フタラールの注意点として正しいのはどれか。",
+    "correct": "バチルス属芽胞に弱い",
+    "distractors": [
+      "芽胞にも短時間で確実に有効である",
+      "グルタラールより刺激が少ないためPPEは不要である",
+      "十分にすすげば生体組織にも使用できる"
+    ],
+    "explanation": "高水準消毒薬だが限界がある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-054",
+    "number": 54,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "フタラールが禁忌とされる場合がある器具はどれか。",
+    "correct": "超音波白内障手術器具など",
+    "distractors": [
+      "内視鏡",
+      "人工呼吸器回路",
+      "麻酔関連器材"
+    ],
+    "explanation": "資料で禁忌例として示されている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-055",
+    "number": 55,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "過酢酸の特徴として正しいものはどれか。",
+    "correct": "高水準消毒薬の中でも強い殺菌作用を持つ",
+    "distractors": [
+      "臭いが少なく材質を傷めにくい",
+      "石けんと混合すると不活性化する",
+      "バチルス属芽胞への効果が弱い"
+    ],
+    "explanation": "講義資料では、過酢酸は高水準消毒薬として強い殺菌作用を持つものとして示されている。実際の使用では製品表示の濃度・接触時間・対象を守る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-056",
+    "number": 56,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "第四級アンモニウム塩の特徴として正しいのはどれか。",
+    "correct": "臭いが少なく材質を傷めにくい",
+    "distractors": [
+      "石けんと混合すると不活性化する",
+      "バチルス属芽胞にも有効である",
+      "高水準消毒薬として内視鏡処理に用いる"
+    ],
+    "explanation": "低水準消毒薬の特徴である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-057",
+    "number": 57,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "第四級アンモニウム塩の取り扱いで注意すべきことはどれか。",
+    "correct": "経口毒性に注意する",
+    "distractors": [
+      "蒸気曝露と眼・皮膚への付着に注意する",
+      "バチルス属芽胞への効果が弱いことに注意する",
+      "石けんとの混合で不活性化することに注意する"
+    ],
+    "explanation": "講義資料では第四級アンモニウム塩について経口毒性への注意が示されている。実際は製品ごとの安全情報、対象、濃度、使用方法を守る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-058",
+    "number": 58,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "クロルヘキシジンの用途として適切なものはどれか。",
+    "correct": "創傷や手指の消毒",
+    "distractors": [
+      "内視鏡の高水準消毒",
+      "手術器械の滅菌",
+      "床やドアノブの高水準消毒"
+    ],
+    "explanation": "講義資料の表では『創傷・手指消毒』と示されている。実際の使用部位は製剤の濃度・剤形・禁忌により異なるため、製品表示を確認する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-059",
+    "number": 59,
+    "lecture": 1,
+    "category": "消毒薬の取り扱い",
+    "question": "クロルヘキシジンの注意点として正しいのはどれか。",
+    "correct": "石けんと混合すると不活性化する",
+    "distractors": [
+      "蒸気曝露を避けるため十分な換気が必要である",
+      "超音波白内障手術器具への使用が禁忌である",
+      "最も強力な殺菌作用があるため材質への影響に注意する"
+    ],
+    "explanation": "併用や混合に注意が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-060",
+    "number": 60,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "環境整備の基本原則として適切なのはどれか。",
+    "correct": "広範囲消毒より的確な清掃と局所消毒を優先する",
+    "distractors": [
+      "環境全体への定期的な消毒を清掃より優先する",
+      "目に見える汚染がある場所だけを清掃する",
+      "洗浄を省略し、消毒薬による清拭だけを行う"
+    ],
+    "explanation": "一律の広範囲消毒は避ける。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-061",
+    "number": 61,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "広範囲に消毒薬を使用することで生じるリスクはどれか。",
+    "correct": "蒸気発生や引火",
+    "distractors": [
+      "乾燥促進と不燃化",
+      "換気改善と無臭化",
+      "洗浄力向上と材質保護"
+    ],
+    "explanation": "消毒薬の過剰使用には安全上のリスクがある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-062",
+    "number": 62,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "血液や体液で汚染された場合の基本対応はどれか。",
+    "correct": "局所の清拭除去と消毒",
+    "distractors": [
+      "洗浄剤だけで広範囲を清掃する",
+      "汚染部位を除去せず消毒薬だけで清拭する",
+      "汚染部位を含む部屋全体を消毒する"
+    ],
+    "explanation": "汚染部位を適切に除去して消毒する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-063",
+    "number": 63,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "日常清掃で最も重要なことはどれか。",
+    "correct": "物理的に汚れや微生物を除去する",
+    "distractors": [
+      "すべての環境表面へ消毒薬を使用する",
+      "目に見える汚れがない場所は清掃しない",
+      "洗浄剤を使用せず消毒薬だけで清拭する"
+    ],
+    "explanation": "清掃は感染対策の基本である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-064",
+    "number": 64,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "VREやMRSAなどの伝播について正しいのはどれか。",
+    "correct": "環境表面が直接関与することがある",
+    "distractors": [
+      "環境表面は伝播に関与しない",
+      "患者との直接接触だけで伝播する",
+      "患者周辺環境は乾燥していれば清掃しなくてよい"
+    ],
+    "explanation": "環境表面の管理が重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-065",
+    "number": 65,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "感染性物質で汚染された表面に必要となる場合があるものはどれか。",
+    "correct": "洗浄剤だけでなく消毒薬",
+    "distractors": [
+      "洗浄剤だけによる清掃",
+      "消毒薬だけによる清拭",
+      "乾燥させてから通常清掃を行う"
+    ],
+    "explanation": "汚染状況に応じて消毒薬が必要になる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-066",
+    "number": 66,
+    "lecture": 1,
+    "category": "環境整備",
+    "question": "洗浄剤のみを使用する際に注意すべきことはどれか。",
+    "correct": "細菌を環境へ播種するおそれがある",
+    "distractors": [
+      "環境表面を高水準消毒した状態にできる",
+      "汚染部位の局所消毒を不要にできる",
+      "広範囲の消毒薬使用による蒸気や引火を防げる"
+    ],
+    "explanation": "講義資料では、洗浄剤のみの使用が細菌を環境へ播種するおそれに注意するよう示されている。実際の清掃では施設の手順に従う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-067",
+    "number": 67,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "水回り環境が感染対策上重要な理由はどれか。",
+    "correct": "見落とされがちな感染リスクの温床になる",
+    "distractors": [
+      "日常的に水で流されるため、微生物は定着しにくい",
+      "目に見える汚れがなければ感染リスクは低い",
+      "定期清掃をしていれば湿潤状態でも問題になりにくい"
+    ],
+    "explanation": "湿潤環境は微生物が問題となりやすい。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-068",
+    "number": 68,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "水回り環境で主な脅威となる菌群はどれか。",
+    "correct": "グラム陰性菌",
+    "distractors": [
+      "VREやMRSA",
+      "バチルス属芽胞",
+      "HBV、HCV、HIV"
+    ],
+    "explanation": "資料ではグラム陰性菌が示されている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-069",
+    "number": 69,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "水回り環境で問題となりやすい病原体の例はどれか。",
+    "correct": "緑膿菌、セラチア、レジオネラ、CRE",
+    "distractors": [
+      "HBV、HCV、HIV",
+      "VRE、MRSA",
+      "バチルス属芽胞"
+    ],
+    "explanation": "水回りに関連する重要な病原体である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-070",
+    "number": 70,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "汚染された流し台や蛇口からの飛沫が汚染し得るものはどれか。",
+    "correct": "医療従事者の手や周囲の器具",
+    "distractors": [
+      "医療従事者の手だけで、周囲の器具は汚染しない",
+      "周囲の器具だけで、医療従事者の手は汚染しない",
+      "汚染は流し台や蛇口の内部だけにとどまる"
+    ],
+    "explanation": "その後、患者へ拡散する可能性がある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-071",
+    "number": 71,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "水回り環境の防御策として重要なのはどれか。",
+    "correct": "清潔管理と湿潤要因の排除",
+    "distractors": [
+      "定期的な消毒だけを行い、湿潤要因は残してよい",
+      "使用後に水滴を拭き取れば、清掃は省略できる",
+      "流し台周囲を清掃すれば、乾燥を保つ必要はない"
+    ],
+    "explanation": "湿潤環境を減らすことが重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-072",
+    "number": 72,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "水回り環境で保つべき状態はどれか。",
+    "correct": "乾燥",
+    "distractors": [
+      "湿潤",
+      "水滴を残した状態",
+      "湿潤要因がある状態"
+    ],
+    "explanation": "乾燥を保つことが最大の防御策として示されている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-073",
+    "number": 73,
+    "lecture": 1,
+    "category": "水回り環境",
+    "question": "使用前に数分放水する対策について正しいのはどれか。",
+    "correct": "有効な対策となる場合がある",
+    "distractors": [
+      "停滞水の有無にかかわらず毎回必ず行う",
+      "長期間使用していない場合でも効果は期待できない",
+      "放水を行えば流し台や蛇口の清掃は省略できる"
+    ],
+    "explanation": "停滞水などへの対策として示されている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-074",
+    "number": 74,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "清潔リネンの定義はどれか。",
+    "correct": "洗濯および処理済みの衛生的な布製品",
+    "distractors": [
+      "使用後に外観だけ確認した布製品",
+      "血液や体液が付着した布製品",
+      "感染経路別予防策患者の使用済み布製品"
+    ],
+    "explanation": "汚染リネンと区別して管理する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-075",
+    "number": 75,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "清潔リネンの運搬方法として適切なのはどれか。",
+    "correct": "蓋や覆いのある専用カートを使用する",
+    "distractors": [
+      "清潔・汚染リネンを仕切った同じカートで運ぶ",
+      "清潔リネン専用なら覆いのないカートで運ぶ",
+      "短時間の運搬なら一般の台車を使用する"
+    ],
+    "explanation": "運搬中の汚染を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-076",
+    "number": 76,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "清潔リネンの保管方法として適切なのはどれか。",
+    "correct": "専用の保管室やキャビネットに保管する",
+    "distractors": [
+      "包装されていれば流し台の下に保管する",
+      "棚を分ければ汚染リネンと同じ保管室でよい",
+      "短期間なら床に直接置いてもよい"
+    ],
+    "explanation": "清潔を維持するために専用保管が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-077",
+    "number": 77,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "汚染リネン・感染性リネンの定義として正しいのはどれか。",
+    "correct": "血液や体液などが付着したリネン",
+    "distractors": [
+      "洗濯および処理済みの布製品",
+      "蓋や覆いのある専用カート内の清潔リネン",
+      "専用の保管室にある清潔リネン"
+    ],
+    "explanation": "感染リスクのあるリネンとして扱う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-078",
+    "number": 78,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "汚染リネンの運搬で使用するものはどれか。",
+    "correct": "専用カートや非透過性バッグ",
+    "distractors": [
+      "蓋のある清潔リネン用カート",
+      "一般のカートに丈夫な袋を載せたもの",
+      "透過性のある袋を載せた専用カート"
+    ],
+    "explanation": "漏れや汚染拡大を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-079",
+    "number": 79,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "汚染リネンの運搬で重要な目的はどれか。",
+    "correct": "漏れを防止する",
+    "distractors": [
+      "洗濯後の仕分けを簡単にする",
+      "一度に運べるリネンの量を増やす",
+      "回収と運搬の回数を減らす"
+    ],
+    "explanation": "血液・体液などの漏出を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-080",
+    "number": 80,
+    "lecture": 1,
+    "category": "リネン管理",
+    "question": "汚染リネンの回収・取り扱い時に必要な対応はどれか。",
+    "correct": "PPEを着用する",
+    "distractors": [
+      "汚染に直接触れなければPPEは着用しない",
+      "汚れを落としてから回収するため、その場で振り払う",
+      "回収後にまとめて分類するため、病室内で仕分ける"
+    ],
+    "explanation": "曝露を防ぐためPPEが必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-081",
+    "number": 81,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "鋭利な感染性廃棄物の具体例はどれか。",
+    "correct": "注射針、メス",
+    "distractors": [
+      "血液付着ガーゼ、臓器",
+      "血液、廃液",
+      "注射針、血液付着ガーゼ、廃液"
+    ],
+    "explanation": "針刺しリスクがあるため注意する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-082",
+    "number": 82,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "鋭利な感染性廃棄物に使用する容器はどれか。",
+    "correct": "耐貫通性容器",
+    "distractors": [
+      "丈夫な袋または容器",
+      "密閉容器",
+      "二重にした丈夫な袋"
+    ],
+    "explanation": "針刺し事故を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-083",
+    "number": 83,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "鋭利な感染性廃棄物を示す色はどれか。",
+    "correct": "黄色",
+    "distractors": [
+      "橙色",
+      "赤色",
+      "白色"
+    ],
+    "explanation": "資料では黄色で識別する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-084",
+    "number": 84,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "固形状の感染性廃棄物の具体例はどれか。",
+    "correct": "血液付着ガーゼ、臓器",
+    "distractors": [
+      "注射針、メス",
+      "血液、廃液",
+      "注射針、血液付着ガーゼ、廃液"
+    ],
+    "explanation": "固形状として扱う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-085",
+    "number": 85,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "固形状の感染性廃棄物に使用する容器はどれか。",
+    "correct": "丈夫な袋または容器",
+    "distractors": [
+      "耐貫通性容器",
+      "密閉容器",
+      "二重にした丈夫な袋"
+    ],
+    "explanation": "破損や漏れを防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-086",
+    "number": 86,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "固形状の感染性廃棄物を示す色はどれか。",
+    "correct": "橙色",
+    "distractors": [
+      "黄色",
+      "赤色",
+      "白色"
+    ],
+    "explanation": "資料では橙色で識別する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-087",
+    "number": 87,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "液状・泥状の感染性廃棄物の具体例はどれか。",
+    "correct": "血液、廃液",
+    "distractors": [
+      "注射針、メス",
+      "血液付着ガーゼ、臓器",
+      "注射針、血液付着ガーゼ、廃液"
+    ],
+    "explanation": "液状または泥状として扱う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-088",
+    "number": 88,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "液状・泥状の感染性廃棄物に使用する容器はどれか。",
+    "correct": "密閉容器",
+    "distractors": [
+      "耐貫通性容器",
+      "丈夫な袋または容器",
+      "二重にした丈夫な袋"
+    ],
+    "explanation": "漏れや飛散を防ぐ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-089",
+    "number": 89,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "液状・泥状の感染性廃棄物を示す色はどれか。",
+    "correct": "赤色",
+    "distractors": [
+      "黄色",
+      "橙色",
+      "白色"
+    ],
+    "explanation": "資料では赤色で識別する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-090",
+    "number": 90,
+    "lecture": 1,
+    "category": "医療廃棄物",
+    "question": "バイオハザードマークの色を分ける目的はどれか。",
+    "correct": "廃棄物の性状を一目で判別し、針刺しや飛散事故を防ぐ",
+    "distractors": [
+      "感染症の診断名ごとに廃棄物を分ける",
+      "廃棄物が発生した部署を示す",
+      "廃棄物を回収した日付を示す"
+    ],
+    "explanation": "収集運搬・処理時の安全確保が目的である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-091",
+    "number": 91,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "3大血液媒介病原体の組み合わせはどれか。",
+    "correct": "HBV、HCV、HIV",
+    "distractors": [
+      "VRE、MRSA、CRE",
+      "緑膿菌、セラチア、レジオネラ",
+      "バチルス属芽胞、VRE、MRSA"
+    ],
+    "explanation": "針刺しや血液・体液曝露で重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-092",
+    "number": 92,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "免疫がない場合、HBVの針刺し時感染率はどの程度とされるか。",
+    "correct": "30%以上",
+    "distractors": [
+      "約10%程度",
+      "約1%程度",
+      "0.3%"
+    ],
+    "explanation": "講義資料では、免疫がない場合のHBV針刺し時感染リスクとして30%以上が示されている。実際の対応は感染源の状態と被曝露者のワクチン・抗体状況で判断する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-093",
+    "number": 93,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HBVで事前予防が可能な理由はどれか。",
+    "correct": "ワクチンが存在するため",
+    "distractors": [
+      "抗ウイルス薬を事前に内服できるため",
+      "免疫グロブリンを定期的に投与できるため",
+      "針刺し時の感染率が低いため"
+    ],
+    "explanation": "HBVはワクチンで予防できる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-094",
+    "number": 94,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HBV曝露後対応として検討されるものはどれか。",
+    "correct": "免疫グロブリン（HBIG）投与",
+    "distractors": [
+      "抗HIV薬による予防内服だけ",
+      "経過観察、抗ウイルス薬治療",
+      "自己判断で放置する"
+    ],
+    "explanation": "状況に応じてHBIGなどを検討する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-095",
+    "number": 95,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HCV感染者の血液による針刺し時の感染率はどれか。",
+    "correct": "約1.8%",
+    "distractors": [
+      "30%以上",
+      "約10%",
+      "0.3%"
+    ],
+    "explanation": "試験対策上の講義値は約1.8%。CDC 2020ガイダンスは、古い文献の約1.8%に対し、より新しい推定値として経皮曝露0.2%を示している。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-096",
+    "number": 96,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HCVワクチンについて正しいのはどれか。",
+    "correct": "ワクチンは存在しない",
+    "distractors": [
+      "B型肝炎ウイルスのワクチンでHCVも予防できる",
+      "曝露後に接種すれば必ず感染を防げる",
+      "HCV曝露後はワクチンだけで対応する"
+    ],
+    "explanation": "HCVにはワクチンがない。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-097",
+    "number": 97,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HCV感染後の慢性化と重篤化について正しいものはどれか。",
+    "correct": "感染者の3分の2が慢性肝炎となり、肝硬変・肝がんへ進展する",
+    "distractors": [
+      "感染者の約3分の1が慢性肝炎となり、肝硬変・肝がんへ進展する",
+      "感染者の約10分の1が慢性肝炎となり、肝硬変・肝がんへ進展する",
+      "感染者のほぼ全例が慢性肝炎となり、肝硬変・肝がんへ進展する"
+    ],
+    "explanation": "慢性化と重篤化に注意する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-098",
+    "number": 98,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HCVへの職業曝露後の基本対応として適切なのはどれか。",
+    "correct": "早期に検査・経過観察を行い、感染が確認された場合は治療につなげる",
+    "distractors": [
+      "すべての曝露者へ抗ウイルス薬を予防投与する",
+      "B型肝炎ワクチンを接種してHCVを予防する",
+      "症状が出るまで検査を行わない"
+    ],
+    "explanation": "HCVには標準的な曝露後予防内服は推奨されず、感染源と被曝露者の早期検査、所定の追跡検査、感染確認時の治療連携が基本となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-099",
+    "number": 99,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HIVの針刺し時感染率はどの程度とされるか。",
+    "correct": "0.3%",
+    "distractors": [
+      "30%以上",
+      "約10%程度",
+      "約1%程度"
+    ],
+    "explanation": "資料で示されたリスクである。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-100",
+    "number": 100,
+    "lecture": 1,
+    "category": "血液媒介病原体",
+    "question": "HIV曝露後対応として検討されるものはどれか。",
+    "correct": "抗HIV薬による予防内服（PEP）",
+    "distractors": [
+      "免疫グロブリン（HBIG）投与だけ",
+      "血液検査による経過観察だけ",
+      "B型肝炎ウイルスのワクチン接種"
+    ],
+    "explanation": "曝露後にPEPを検討する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-101",
+    "number": 101,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "針刺しや血液・体液曝露が起きた場合、最初に行うべきことはどれか。",
+    "correct": "ただちに洗浄する",
+    "distractors": [
+      "指定部署へ報告する",
+      "被受傷者と感染源患者の血液検査を行う",
+      "傷口から血液を絞り出す"
+    ],
+    "explanation": "洗浄が最優先である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-102",
+    "number": 102,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露直後の洗浄の目的はどれか。",
+    "correct": "有機物の除去",
+    "distractors": [
+      "傷口からの出血を止める",
+      "感染源となった病原体を特定する",
+      "曝露後の血液検査を不要にする"
+    ],
+    "explanation": "血液や体液などを速やかに除去する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-103",
+    "number": 103,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露部位の洗浄方法として適切なのはどれか。",
+    "correct": "流水と石けんで接触部位を十分に洗う",
+    "distractors": [
+      "血液を絞り出すだけにする",
+      "洗浄せず自己判断で放置する",
+      "消毒薬だけを使用する"
+    ],
+    "explanation": "直ちに十分な洗浄を行う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-104",
+    "number": 104,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "血液の絞り出しについて正しいのはどれか。",
+    "correct": "効果が少ないため推奨されない",
+    "distractors": [
+      "感染予防効果が確立しており必ず行う",
+      "洗浄前に十分な時間をかけて行う",
+      "洗浄後の標準的な手順として毎回行う"
+    ],
+    "explanation": "絞り出しより洗浄を優先する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-105",
+    "number": 105,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露後のStep 2はどれか。",
+    "correct": "迅速な報告",
+    "distractors": [
+      "ただちに洗浄する",
+      "血液検査の実施",
+      "自己判断で経過を見る"
+    ],
+    "explanation": "洗浄後、指定部署へ速やかに報告する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-106",
+    "number": 106,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "針刺し・切創などの曝露後に報告すべき先はどれか。",
+    "correct": "産業医、感染対策チーム、所属長など指定部署",
+    "distractors": [
+      "同じ勤務帯の同僚",
+      "感染源患者の家族",
+      "使用した器材の納入業者"
+    ],
+    "explanation": "施設の手順に従って報告する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-107",
+    "number": 107,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露後に避けるべき行動はどれか。",
+    "correct": "自己判断で放置する",
+    "distractors": [
+      "ただちに洗浄する",
+      "指定部署へ迅速に報告する",
+      "必要な血液検査を受ける"
+    ],
+    "explanation": "放置は厳禁である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-108",
+    "number": 108,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露後のStep 3はどれか。",
+    "correct": "血液検査の実施",
+    "distractors": [
+      "ただちに洗浄する",
+      "迅速な報告",
+      "自己判断で対応を終了する"
+    ],
+    "explanation": "血液媒介病原体に関する検査を行う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-109",
+    "number": 109,
+    "lecture": 1,
+    "category": "曝露時対応",
+    "question": "曝露後の血液検査の対象はどれか。",
+    "correct": "被受傷者本人と感染源患者の両方",
+    "distractors": [
+      "被受傷者本人だけ",
+      "感染源患者だけ",
+      "その場にいた職員全員"
+    ],
+    "explanation": "両方の検査が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-110",
+    "number": 110,
+    "lecture": 2,
+    "category": "保菌と感染",
+    "question": "保菌（colonization）の説明として正しいのはどれか。",
+    "correct": "宿主と微生物が共存し、感染症状を認めない状態",
+    "distractors": [
+      "微生物が組織へ侵入し、発熱や炎症を起こした状態",
+      "微生物が検出されない状態",
+      "抗菌薬治療後にだけ成立する状態"
+    ],
+    "explanation": "保菌は微生物が存在していても、組織侵入や症状を伴わない状態をいう。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-111",
+    "number": 111,
+    "lecture": 2,
+    "category": "保菌と感染",
+    "question": "感染症（infection）の説明として正しいのはどれか。",
+    "correct": "微生物の組織侵入・増殖により発熱や炎症などの生体反応が起こる状態",
+    "distractors": [
+      "症状がなく微生物と共存する状態",
+      "検体から常在菌が一度検出された状態",
+      "抗菌薬に感性を示す菌が存在する状態"
+    ],
+    "explanation": "感染症では、微生物の侵入・増殖と宿主の反応が問題となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-112",
+    "number": 112,
+    "lecture": 2,
+    "category": "保菌と感染",
+    "question": "保菌者について感染対策上正しいのはどれか。",
+    "correct": "発症していなくても周囲への感染源となり得る",
+    "distractors": [
+      "症状がなければ微生物を周囲へ広げない",
+      "抗菌薬を使用しなければ感染源にはならない",
+      "保菌と感染症は常に同じ意味である"
+    ],
+    "explanation": "保菌と感染症は異なるが、保菌者も伝播源となる可能性がある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-113",
+    "number": 113,
+    "lecture": 2,
+    "category": "保菌と感染",
+    "question": "病原体が検出されたときの考え方として適切なのはどれか。",
+    "correct": "検出部位、症状、炎症所見などを合わせて保菌か感染かを判断する",
+    "distractors": [
+      "病原体が存在すれば必ず感染症と診断する",
+      "症状だけで菌種を確定する",
+      "保菌でも必ず抗菌薬治療を開始する"
+    ],
+    "explanation": "微生物の存在だけで感染症とは断定せず、臨床情報と検査結果を統合する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-114",
+    "number": 114,
+    "lecture": 2,
+    "category": "微生物検査サイクル",
+    "question": "微生物検査・感染制御サイクルの最初の段階はどれか。",
+    "correct": "感染部位から質の高い検体を適切に採取する",
+    "distractors": [
+      "S/I/R判定だけで治療薬を決める",
+      "培養結果を待たず病原体名を確定する",
+      "消毒薬で検体を処理してから提出する"
+    ],
+    "explanation": "適切な検体採取が、その後のグラム染色、培養、感受性試験の土台となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-115",
+    "number": 115,
+    "lecture": 2,
+    "category": "微生物検査サイクル",
+    "question": "グラム染色（塗抹）の主な役割はどれか。",
+    "correct": "菌の姿と検体の状態を迅速に把握し、初期対応へ反映する",
+    "distractors": [
+      "培養によって原因微生物の菌種を確定する",
+      "S/I/R判定に基づいて抗菌薬を最適化する",
+      "感染部位から質の高い検体を採取する"
+    ],
+    "explanation": "グラム染色は迅速な初期情報を与えるが、最終同定や感受性判定そのものではない。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-116",
+    "number": 116,
+    "lecture": 2,
+    "category": "微生物検査サイクル",
+    "question": "培養と同定の役割はどれか。",
+    "correct": "原因微生物の菌種を確定する",
+    "distractors": [
+      "菌の姿と検体の状態を迅速に把握する",
+      "S/I/R判定に基づいて抗菌薬を最適化する",
+      "感染部位から質の高い検体を採取する"
+    ],
+    "explanation": "培養・同定によって原因菌の正体を明らかにする。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-117",
+    "number": 117,
+    "lecture": 2,
+    "category": "微生物検査サイクル",
+    "question": "薬剤感受性結果を治療へ用いる目的はどれか。",
+    "correct": "有効性に基づき抗菌薬を最適化し、不要な広域薬を減らす",
+    "distractors": [
+      "菌の姿と検体の状態を迅速に把握する",
+      "原因微生物の菌種を確定する",
+      "感染部位から質の高い検体を採取する"
+    ],
+    "explanation": "S/I/Rなどの結果を用いて標的治療やde-escalationへつなげる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-118",
+    "number": 118,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "グラム陽性球菌の略号はどれか。",
+    "correct": "GPC",
+    "distractors": [
+      "GNC",
+      "GPR",
+      "GNR"
+    ],
+    "explanation": "GPCはGram-positive cocci、グラム陽性球菌を表す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-119",
+    "number": 119,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "グラム陰性球菌の略号はどれか。",
+    "correct": "GNC",
+    "distractors": [
+      "GPC",
+      "GPR",
+      "GNR"
+    ],
+    "explanation": "GNCはGram-negative cocci、グラム陰性球菌を表す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-120",
+    "number": 120,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "グラム陽性桿菌の略号はどれか。",
+    "correct": "GPR",
+    "distractors": [
+      "GPC",
+      "GNC",
+      "GNR"
+    ],
+    "explanation": "GPRはGram-positive rods、グラム陽性桿菌を表す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-121",
+    "number": 121,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "グラム陰性桿菌の略号はどれか。",
+    "correct": "GNR",
+    "distractors": [
+      "GPC",
+      "GNC",
+      "GPR"
+    ],
+    "explanation": "GNRはGram-negative rods、グラム陰性桿菌を表す。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-122",
+    "number": 122,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "ブドウ球菌に典型的な配列はどれか。",
+    "correct": "ブドウの房状に集まる球菌",
+    "distractors": [
+      "連鎖状に並ぶ球菌",
+      "太い有芽胞桿菌",
+      "らせん状の陰性桿菌"
+    ],
+    "explanation": "Staphylococcusは房状に集簇するグラム陽性球菌として観察される。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-123",
+    "number": 123,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "レンサ球菌に典型的な配列はどれか。",
+    "correct": "連鎖状に並ぶ球菌",
+    "distractors": [
+      "ブドウの房状に集まる球菌",
+      "細胞内外の陰性双球菌",
+      "カモメの翼状の桿菌"
+    ],
+    "explanation": "Streptococcusは連鎖状に並ぶグラム陽性球菌として観察される。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-124",
+    "number": 124,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "双球菌の説明として正しいのはどれか。",
+    "correct": "2個の球菌が対になって見える",
+    "distractors": [
+      "桿菌が長い鎖を作る",
+      "菌が芽胞だけの形で見える",
+      "菌体が必ずらせん状になる"
+    ],
+    "explanation": "双球菌は球菌が対になって観察される形態をいう。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-125",
+    "number": 125,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "Clostridioides difficileのグラム染色上の特徴として正しいものはどれか。",
+    "correct": "太いグラム陽性桿菌で、芽胞を形成する",
+    "distractors": [
+      "小さなグラム陰性球菌で、芽胞を形成しない",
+      "房状のグラム陽性球菌",
+      "らせん状のグラム陰性桿菌"
+    ],
+    "explanation": "C. difficileはグラム陽性嫌気性桿菌で、芽胞形成が感染対策上重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-126",
+    "number": 126,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "Moraxella catarrhalisの塗抹像として特徴的なのはどれか。",
+    "correct": "細胞内外に見られるグラム陰性双球菌",
+    "distractors": [
+      "ブドウの房状のグラム陽性球菌",
+      "太い有芽胞グラム陽性桿菌",
+      "カモメの翼状のグラム陰性桿菌"
+    ],
+    "explanation": "Moraxella catarrhalisはグラム陰性双球菌として観察され、気道感染症の原因となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-127",
+    "number": 127,
+    "lecture": 2,
+    "category": "グラム染色・形態",
+    "question": "Campylobacter jejuniの特徴的な形態はどれか。",
+    "correct": "らせん状またはカモメの翼状のグラム陰性桿菌",
+    "distractors": [
+      "房状のグラム陽性球菌",
+      "連鎖状のグラム陽性球菌",
+      "太く直線的な有芽胞グラム陽性桿菌"
+    ],
+    "explanation": "Campylobacterは湾曲した独特の形態を示し、感染性腸炎の原因となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-128",
+    "number": 128,
+    "lecture": 2,
+    "category": "感染部位と起因菌",
+    "question": "胆嚢炎の主な起因菌の組み合わせはどれか。",
+    "correct": "大腸菌、肺炎桿菌、クロストリジウム",
+    "distractors": [
+      "肺炎球菌、インフルエンザ菌、モラクセラ菌",
+      "黄色ブドウ球菌、表皮ブドウ球菌、腸球菌だけ",
+      "結核菌、麻疹ウイルス、水痘ウイルス"
+    ],
+    "explanation": "検体採取部位を知ると、想定すべき起因菌を絞り込みやすい。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-129",
+    "number": 129,
+    "lecture": 2,
+    "category": "感染部位と起因菌",
+    "question": "膀胱炎で代表的に想定される菌はどれか。",
+    "correct": "大腸菌、肺炎桿菌",
+    "distractors": [
+      "肺炎球菌、インフルエンザ菌",
+      "結核菌、麻疹ウイルス",
+      "カンピロバクター、C. difficile"
+    ],
+    "explanation": "尿路感染では腸内細菌目の大腸菌や肺炎桿菌などが重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-130",
+    "number": 130,
+    "lecture": 2,
+    "category": "感染部位と起因菌",
+    "question": "肺炎・気管支炎の主な起因菌の組み合わせはどれか。",
+    "correct": "肺炎球菌、インフルエンザ菌、モラクセラ菌、緑膿菌",
+    "distractors": [
+      "大腸菌、肺炎桿菌、クロストリジウムだけ",
+      "腸球菌、C. difficileだけ",
+      "HBV、HCV、HIV"
+    ],
+    "explanation": "呼吸器検体では採取部位と患者背景から、想定する起因菌を考える。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-131",
+    "number": 131,
+    "lecture": 2,
+    "category": "感染部位と起因菌",
+    "question": "膿胸で口腔内常在菌として関係し得る菌はどれか。",
+    "correct": "紡錘菌やミレリ菌群",
+    "distractors": [
+      "大腸菌と肺炎桿菌だけ",
+      "淋菌と髄膜炎菌だけ",
+      "カンピロバクターだけ"
+    ],
+    "explanation": "誤嚥や口腔内細菌との関係を考えることが重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-132",
+    "number": 132,
+    "lecture": 2,
+    "category": "感染部位と起因菌",
+    "question": "敗血症の起因菌を考えるときに重要なのはどれか。",
+    "correct": "感染フォーカスによって想定菌が変わること",
+    "distractors": [
+      "採取部位にかかわらず常に同じ菌を想定すること",
+      "グラム染色を行わずウイルスだけを想定すること",
+      "保菌と感染を区別しないこと"
+    ],
+    "explanation": "敗血症では感染源・採取部位・患者背景を組み合わせて考える。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-133",
+    "number": 133,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Staphylococcus aureusの形態と主な病態の組み合わせはどれか。",
+    "correct": "房状に集まるグラム陽性球菌／膿瘍や創部感染",
+    "distractors": [
+      "連鎖状の陰性球菌／尿路感染",
+      "らせん状陰性桿菌／感染性腸炎",
+      "太い有芽胞桿菌／胆嚢炎のみ"
+    ],
+    "explanation": "黄色ブドウ球菌は房状のGPCで、化膿性病変の重要な原因菌である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-134",
+    "number": 134,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Streptococcus pneumoniaeの特徴として正しいのはどれか。",
+    "correct": "双球菌で、莢膜を持ち、肺炎などの原因となる",
+    "distractors": [
+      "房状に集まる球菌で、芽胞を形成する",
+      "らせん状桿菌で、感染性腸炎だけを起こす",
+      "グラム陰性桿菌で、バイオフィルムを作らない"
+    ],
+    "explanation": "肺炎球菌は莢膜を持つグラム陽性双球菌として重要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-135",
+    "number": 135,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Enterococcus spp.の特徴として正しいものはどれか。",
+    "correct": "連鎖状に並ぶ球菌で、消化器やカテーテル関連感染に注意する",
+    "distractors": [
+      "房状に集まる球菌で、必ず呼吸器感染だけを起こす",
+      "らせん状桿菌で、腸炎だけを起こす",
+      "芽胞を形成する陰性桿菌である"
+    ],
+    "explanation": "腸球菌は消化管由来の感染や医療関連感染で重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-136",
+    "number": 136,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "C. difficile感染で重要な背景はどれか。",
+    "correct": "抗菌薬投与後の菌交代現象と毒素産生",
+    "distractors": [
+      "ワクチン接種後の一過性菌血症",
+      "アルコール消毒による芽胞の増殖抑制",
+      "空気感染による肺炎"
+    ],
+    "explanation": "抗菌薬で腸内細菌叢が乱れるとC. difficileが増殖し、毒素による腸炎を起こし得る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-137",
+    "number": 137,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Moraxella catarrhalisが重要となる感染症はどれか。",
+    "correct": "COPD増悪などの気道感染症",
+    "distractors": [
+      "カテーテル関連血流感染症",
+      "抗菌薬関連腸炎",
+      "尿路感染症"
+    ],
+    "explanation": "Moraxella catarrhalisは気道感染症の原因菌の一つである。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-138",
+    "number": 138,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "大腸菌（Escherichia coli）の臨床的特徴として正しいのはどれか。",
+    "correct": "尿路感染や胆道感染の代表的な起因菌",
+    "distractors": [
+      "肺炎だけを起こすグラム陽性球菌",
+      "芽胞を形成する嫌気性球菌",
+      "カテーテル表面にしか存在しない菌"
+    ],
+    "explanation": "大腸菌は日常診療で頻繁に遭遇するグラム陰性桿菌である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-139",
+    "number": 139,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "肺炎桿菌（Klebsiella pneumoniae）の形態的特徴はどれか。",
+    "correct": "太く丸みを帯び、厚い莢膜を持つグラム陰性桿菌",
+    "distractors": [
+      "房状に集まるグラム陽性球菌",
+      "らせん状のグラム陰性桿菌",
+      "太い有芽胞グラム陽性桿菌"
+    ],
+    "explanation": "莢膜は貪食されにくさや病原性に関係し、重症化に注意する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-140",
+    "number": 140,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Haemophilus influenzaeの塗抹観察で注意する点はどれか。",
+    "correct": "非常に小さい桿菌で、背景に埋もれやすい",
+    "distractors": [
+      "巨大な房状球菌として見える",
+      "明瞭な芽胞を必ず形成する",
+      "必ずらせん状に見える"
+    ],
+    "explanation": "小さなグラム陰性桿菌のため、塗抹像を慎重に観察する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-141",
+    "number": 141,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Pseudomonas aeruginosaの特徴として正しいのはどれか。",
+    "correct": "バイオフィルムを形成し、慢性気道感染で難治化し得る",
+    "distractors": [
+      "芽胞を形成し、アルコールだけで完全に除去できる",
+      "グラム陽性球菌で、乾燥環境だけに生息する",
+      "ワクチンで完全に予防できる"
+    ],
+    "explanation": "緑膿菌は細長いグラム陰性桿菌で、湿潤環境やバイオフィルムが重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-142",
+    "number": 142,
+    "lecture": 2,
+    "category": "代表的病原体",
+    "question": "Campylobacter jejuniが重要な原因菌となる病態はどれか。",
+    "correct": "感染性腸炎",
+    "distractors": [
+      "胆道感染症",
+      "尿路感染症",
+      "カテーテル関連感染症"
+    ],
+    "explanation": "Campylobacter jejuniは感染性腸炎の主要な原因菌の一つである。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-143",
+    "number": 143,
+    "lecture": 2,
+    "category": "薬剤感受性",
+    "question": "ディスク拡散法で薬剤感受性を判定するときに観察するものはどれか。",
+    "correct": "阻止円の有無と大きさ",
+    "distractors": [
+      "グラム染色像の配列と染色性",
+      "喀痰中の膿性部分の割合",
+      "培養ボトルの好気・嫌気の組み合わせ"
+    ],
+    "explanation": "阻止円を基準と照合してS/I/Rなどを判定する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-144",
+    "number": 144,
+    "lecture": 2,
+    "category": "薬剤感受性",
+    "question": "S（Susceptible、感性）の説明として適切なのはどれか。",
+    "correct": "通常の推奨投与で治療効果が期待できる",
+    "distractors": [
+      "通常の投与では増殖を阻止できない",
+      "検査不能を示す",
+      "感染ではなく保菌を示す"
+    ],
+    "explanation": "Sは推奨される曝露条件で治療成功が期待できる判定である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-145",
+    "number": 145,
+    "lecture": 2,
+    "category": "薬剤感受性",
+    "question": "薬剤感受性判定におけるI（Intermediate、中間）の説明として適切なものはどれか。",
+    "correct": "薬剤曝露を高められる条件や高濃度となる部位で効果が期待できる場合がある",
+    "distractors": [
+      "通常の推奨投与で治療効果が期待できる",
+      "通常の投与条件では治療効果が期待しにくい",
+      "阻止円を測定できず判定不能である"
+    ],
+    "explanation": "Iの解釈は菌種・薬剤・採用基準で異なるため、検査室の報告基準に従う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-146",
+    "number": 146,
+    "lecture": 2,
+    "category": "薬剤感受性",
+    "question": "R（Resistant、耐性）の説明として適切なのはどれか。",
+    "correct": "通常の投与条件では治療効果が期待しにくい",
+    "distractors": [
+      "必ず低用量で治療できる",
+      "阻止円が最も大きい",
+      "菌の病原性がないことを示す"
+    ],
+    "explanation": "Rでは通常の投与スケジュールで十分な効果が得られにくい。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-147",
+    "number": 147,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "検体品質を守る『5つの鉄則』に含まれないものはどれか。",
+    "correct": "検体を長時間室温に放置する",
+    "distractors": [
+      "適切なタイミング",
+      "無菌的アプローチ",
+      "専用容器と迅速な輸送"
+    ],
+    "explanation": "タイミング、無菌操作、容器、輸送、保存が検体品質を左右する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-148",
+    "number": 148,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "微生物検体を無菌的に採取する主な目的はどれか。",
+    "correct": "常在菌や環境菌の混入を減らす",
+    "distractors": [
+      "原因菌を死滅させる",
+      "すべての検体を無菌にする",
+      "培養を不要にする"
+    ],
+    "explanation": "汚染を防ぐことで、結果の解釈と原因菌検出の精度を高める。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-149",
+    "number": 149,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "検体に合った専用容器を使用する理由はどれか。",
+    "correct": "漏出や乾燥、外部からの汚染を防ぐ",
+    "distractors": [
+      "検体中の菌をすべて死滅させる",
+      "患者識別を不要にする",
+      "提出まで室温放置できるようにする"
+    ],
+    "explanation": "検体の性状と検査目的に合う容器を選ぶ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-150",
+    "number": 150,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "採取した検体の基本的な取り扱いとして適切なのはどれか。",
+    "correct": "速やかに検査室へ提出し、遅れる場合は検体別の保存条件に従う",
+    "distractors": [
+      "検体の種類を問わず室温で保存する",
+      "検体の種類を問わず冷蔵保存する",
+      "検体の種類を問わず凍結保存する"
+    ],
+    "explanation": "遅延と不適切な保存は菌の死滅や過増殖を招き、結果をゆがめる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-151",
+    "number": 151,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "尿培養用検体の採取として適切なのはどれか。",
+    "correct": "中間尿または適切に採取したカテーテル尿を滅菌容器へ入れる",
+    "distractors": [
+      "尿バッグに長時間たまった尿を使用する",
+      "便器から尿をすくい取る",
+      "消毒薬を尿へ加えて提出する"
+    ],
+    "explanation": "常在菌混入を減らし、尿路を代表する検体を採取する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-152",
+    "number": 152,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "尿検体をすぐ提出できない場合の基本はどれか。",
+    "correct": "施設手順に従って冷蔵または保存剤入り容器を用いる",
+    "distractors": [
+      "蓋を開けて室温放置する",
+      "消毒薬を加える",
+      "必ず24時間保温する"
+    ],
+    "explanation": "尿中の菌の過増殖を防ぐため、迅速提出と適切な保存が必要である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-153",
+    "number": 153,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "上気道検体の採取で重要なのはどれか。",
+    "correct": "病変部以外の常在菌へ綿棒が触れないようにする",
+    "distractors": [
+      "口腔内のあらゆる表面を広くこする",
+      "採取後に綿棒を乾燥させる",
+      "同じ綿棒を複数患者に使用する"
+    ],
+    "explanation": "常在菌の混入を減らし、病変部を代表する検体を得る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-154",
+    "number": 154,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "上気道の綿棒検体で専用輸送培地を使う主な理由はどれか。",
+    "correct": "乾燥を防ぎ、菌の生存性を保つ",
+    "distractors": [
+      "すべての菌を増殖させる",
+      "検体を滅菌する",
+      "患者情報の記載を不要にする"
+    ],
+    "explanation": "輸送培地は提出までの検体品質を守る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-155",
+    "number": 155,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "淋菌の培養検体を提出する際の注意として適切なものはどれか。",
+    "correct": "冷蔵せず、専用条件で速やかに提出する",
+    "distractors": [
+      "必ず一晩凍結する",
+      "消毒用アルコールへ浸す",
+      "乾燥させてから提出する"
+    ],
+    "explanation": "淋菌は保存・輸送条件の影響を受けやすい。実際は使用する検査法と輸送システムの手順に従う。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-156",
+    "number": 156,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "Miller & Jones分類で培養検査に最も適した喀痰はどれか。",
+    "correct": "膿性部分が2/3以上を占めるP3",
+    "distractors": [
+      "唾液・完全な粘液痰であるM1",
+      "少量の膿性部分を含むM2",
+      "膿性部分が1/3以下のP1"
+    ],
+    "explanation": "膿性部分が多いほど下気道由来の情報を得やすく、原因菌検出率が高くなる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-157",
+    "number": 157,
+    "lecture": 2,
+    "category": "検体採取・保存",
+    "question": "喀痰検体を提出するときの正しい方法はどれか。",
+    "correct": "容器へ直接喀出し、ティッシュペーパーなどに包まない",
+    "distractors": [
+      "ティッシュへ包んでから容器へ入れる",
+      "消毒薬を混ぜる",
+      "蓋を開けた状態で搬送する"
+    ],
+    "explanation": "適切な専用容器へ直接採取し、安全に密閉する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-158",
+    "number": 158,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "成人の血液培養で原則として採取するセット数はどれか。",
+    "correct": "少なくとも2セットを別部位から採取する",
+    "distractors": [
+      "1セットを1部位から採取する",
+      "2セットを同じボトルへまとめる",
+      "3セット分を1本のボトルへまとめる"
+    ],
+    "explanation": "講義資料では2セット（通常は好気・嫌気の計4本）を原則としている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-159",
+    "number": 159,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "血液培養の1セットを構成する一般的な組み合わせはどれか。",
+    "correct": "好気ボトル1本と嫌気ボトル1本",
+    "distractors": [
+      "好気ボトル2本だけ",
+      "嫌気ボトル2本だけ",
+      "尿培養容器と喀痰容器"
+    ],
+    "explanation": "1セットは通常、好気用と嫌気用の2本で構成される。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-160",
+    "number": 160,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "血液培養前の皮膚消毒で重要なのはどれか。",
+    "correct": "皮脂や汚れを除き、適切な消毒薬を十分に作用させる",
+    "distractors": [
+      "採血後にだけ消毒する",
+      "消毒薬を塗った直後に濡れたまま穿刺する",
+      "同じ綿で広い範囲を往復してこする"
+    ],
+    "explanation": "適切な皮膚消毒は皮膚常在菌によるコンタミネーションを減らす。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-161",
+    "number": 161,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "血液培養ボトルのゴム栓への対応として適切なのはどれか。",
+    "correct": "接種前に施設手順で定めた消毒を行う",
+    "distractors": [
+      "未開封なら消毒は不要",
+      "水道水だけで洗う",
+      "患者の皮膚消毒に使った綿を再使用する"
+    ],
+    "explanation": "ボトル栓も接種前に適切に消毒する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-162",
+    "number": 162,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "血液培養の菌検出率に特に大きく影響するものはどれか。",
+    "correct": "適切な採血量",
+    "distractors": [
+      "採血する腕の左右",
+      "ボトルへ接種する順番",
+      "ラベルを貼付する位置"
+    ],
+    "explanation": "成人では十分な血液量を確保することが検出感度に直結する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-163",
+    "number": 163,
+    "lecture": 2,
+    "category": "血液培養",
+    "question": "血液培養採取時の針刺し防止策として適切なのはどれか。",
+    "correct": "安全器材と培養ボトル用セーフティホルダーを使用する",
+    "distractors": [
+      "使用後の針へ両手でリキャップする",
+      "針を手渡しする",
+      "使用済み針を一般ごみへ入れる"
+    ],
+    "explanation": "安全器材を用い、使用済み鋭利物を適切な容器へ直ちに廃棄する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-164",
+    "number": 164,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "抗菌薬耐性の4つの基本機序の組み合わせはどれか。",
+    "correct": "薬剤の不活化、作用点の変化、作用点の修飾・保護、菌体内濃度の低下",
+    "distractors": [
+      "薬剤の不活化、作用点の変化、作用点の修飾・保護、芽胞形成",
+      "薬剤の不活化、作用点の変化、莢膜形成、菌体内濃度の低下",
+      "薬剤の不活化、バイオフィルム形成、作用点の修飾・保護、菌体内濃度の低下"
+    ],
+    "explanation": "細菌は複数の方法で抗菌薬を無効化する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-165",
+    "number": 165,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "βラクタマーゼによる耐性機序はどれか。",
+    "correct": "抗菌薬を酵素で加水分解して不活化する",
+    "distractors": [
+      "薬剤の結合部位だけを物理的に隠す",
+      "菌体外へ薬剤を排出する",
+      "細胞膜の透過性だけを高める"
+    ],
+    "explanation": "βラクタマーゼはβラクタム環を分解し、薬剤を無効化する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-166",
+    "number": 166,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "MRSAの代表的な耐性機序はどれか。",
+    "correct": "細胞壁合成酵素など作用点の変化",
+    "distractors": [
+      "芽胞形成だけ",
+      "アルコール分解酵素の産生",
+      "莢膜の消失"
+    ],
+    "explanation": "薬剤の標的が変化すると、抗菌薬が結合しにくくなる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-167",
+    "number": 167,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "リボソームのメチル化による耐性はどの機序に当たるか。",
+    "correct": "作用点の修飾・保護",
+    "distractors": [
+      "薬剤の不活化",
+      "菌体内濃度の低下だけ",
+      "芽胞形成"
+    ],
+    "explanation": "標的の形を保ちながら修飾や保護を行い、薬剤の結合を妨げる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-168",
+    "number": 168,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "保護タンパクの産生によって防御され得る薬剤群はどれか。",
+    "correct": "キノロン系やテトラサイクリン系",
+    "distractors": [
+      "βラクタム系やアミノグリコシド系",
+      "マクロライド系やリンコマイシン系",
+      "グリコペプチド系やホスホマイシン系"
+    ],
+    "explanation": "保護タンパク質が標的を守り、薬剤作用を妨げる場合がある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-169",
+    "number": 169,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "菌体内の薬剤濃度を下げる方法はどれか。",
+    "correct": "透過性を低下させる、または排出ポンプで薬剤を外へ出す",
+    "distractors": [
+      "薬剤を菌体内へ積極的に取り込む",
+      "細胞壁を完全に失う",
+      "患者の体温を下げる"
+    ],
+    "explanation": "薬剤の侵入を防ぐことと、入った薬剤を排出することの両方がある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-170",
+    "number": 170,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "ポーリン孔の減少・欠損がもたらすものはどれか。",
+    "correct": "薬剤の菌体内への侵入低下",
+    "distractors": [
+      "薬剤の加水分解",
+      "標的タンパクのメチル化",
+      "芽胞の発芽"
+    ],
+    "explanation": "外膜の通路が減ると薬剤が菌体内へ入りにくくなる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-171",
+    "number": 171,
+    "lecture": 2,
+    "category": "抗菌薬耐性機序",
+    "question": "多剤排出ポンプの活性化によって起こることはどれか。",
+    "correct": "菌体内へ入った薬剤が外へ排出される",
+    "distractors": [
+      "薬剤のβラクタム環が加水分解される",
+      "薬剤の作用点が新しく作られる",
+      "菌がグラム陽性へ変化する"
+    ],
+    "explanation": "排出ポンプは複数系統の薬剤に関係することがある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-172",
+    "number": 172,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "MRSAの名称として正しいのはどれか。",
+    "correct": "メチシリン耐性黄色ブドウ球菌",
+    "distractors": [
+      "バンコマイシン耐性腸球菌",
+      "多剤耐性緑膿菌",
+      "カルバペネム耐性腸内細菌目細菌"
+    ],
+    "explanation": "MRSAはグラム陽性球菌で、接触伝播対策が重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-173",
+    "number": 173,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "MRSAの環境上の特徴として正しいのはどれか。",
+    "correct": "乾燥環境や高頻度接触面で問題となり得る",
+    "distractors": [
+      "湿潤環境でしか生存できない",
+      "芽胞を形成するためアルコールが全く無効",
+      "空気感染だけで広がる"
+    ],
+    "explanation": "ベッド柵やドアノブなど手が触れる表面の清掃・消毒が重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-174",
+    "number": 174,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "VREの名称として正しいのはどれか。",
+    "correct": "バンコマイシン耐性腸球菌",
+    "distractors": [
+      "メチシリン耐性黄色ブドウ球菌",
+      "多剤耐性緑膿菌",
+      "基質拡張型βラクタマーゼ産生菌"
+    ],
+    "explanation": "VREは腸管に保菌され、便を介した接触伝播に注意する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-175",
+    "number": 175,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "VRE対策で重要な組み合わせはどれか。",
+    "correct": "接触予防策と正しい手指衛生",
+    "distractors": [
+      "空気予防策だけ",
+      "抗菌薬を環境表面へ散布する",
+      "患者周辺環境の清掃を省略する"
+    ],
+    "explanation": "患者・排泄物・汚染環境を介した接触伝播を断つ。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-176",
+    "number": 176,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "MDRPの名称として正しいのはどれか。",
+    "correct": "多剤耐性緑膿菌",
+    "distractors": [
+      "メチシリン耐性黄色ブドウ球菌",
+      "バンコマイシン耐性腸球菌",
+      "ペニシリン耐性肺炎球菌"
+    ],
+    "explanation": "MDRPは湿潤・水回り環境とバイオフィルムが重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-177",
+    "number": 177,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "MDRPで判定上問題となる3系統はどれか。",
+    "correct": "カルバペネム系、アミノグリコシド系、フルオロキノロン系",
+    "distractors": [
+      "ペニシリン系、マクロライド系、抗真菌薬",
+      "抗ウイルス薬、抗結核薬、消毒薬",
+      "セフェム系、ワクチン、免疫グロブリン"
+    ],
+    "explanation": "講義資料では、これら3系統すべてへの耐性が強調されている。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-178",
+    "number": 178,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "ESBL産生菌の主な耐性機序はどれか。",
+    "correct": "基質拡張型βラクタマーゼによる第3世代セフェム系などの分解",
+    "distractors": [
+      "芽胞形成によるアルコール無効化",
+      "作用点を全く持たないこと",
+      "患者体内でだけプラスミドを失うこと"
+    ],
+    "explanation": "ESBLは主に大腸菌や肺炎桿菌などで問題となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-179",
+    "number": 179,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "CREの説明として正しいのはどれか。",
+    "correct": "カルバペネム系に耐性を示す腸内細菌目細菌",
+    "distractors": [
+      "メチシリンだけに耐性の黄色ブドウ球菌",
+      "バンコマイシンだけに耐性の腸球菌",
+      "芽胞を形成するグラム陽性嫌気性菌"
+    ],
+    "explanation": "CREではカルバペネマーゼ産生や複数機序の組み合わせが問題となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-180",
+    "number": 180,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "ESBL産生菌とCREに共通して重要な主な菌はどれか。",
+    "correct": "大腸菌や肺炎桿菌",
+    "distractors": [
+      "肺炎球菌と腸球菌だけ",
+      "C. difficileだけ",
+      "カンピロバクターだけ"
+    ],
+    "explanation": "腸内細菌目細菌では耐性遺伝子の伝播にも注意する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-181",
+    "number": 181,
+    "lecture": 2,
+    "category": "主要耐性菌",
+    "question": "耐性遺伝子がプラスミド上に存在することで起こり得ることはどれか。",
+    "correct": "異なる菌種間にも耐性能が水平伝播する",
+    "distractors": [
+      "耐性遺伝子が同一菌株内だけに固定される",
+      "耐性遺伝子が細胞分裂のたびに必ず消失する",
+      "耐性遺伝子がほかの菌へ移動できなくなる"
+    ],
+    "explanation": "プラスミドは染色体とは別に存在し、接合などで耐性遺伝子を広げることがある。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-182",
+    "number": 182,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "バイオフィルムの基本構造として正しいのはどれか。",
+    "correct": "細菌が分泌する菌体外粘膜多糖などに包まれた集団",
+    "distractors": [
+      "細菌が完全に消失した無菌領域",
+      "ウイルスだけで作る莢膜",
+      "芽胞だけが単独で浮遊する状態"
+    ],
+    "explanation": "バイオフィルムは細菌を守る要塞のように働く。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-183",
+    "number": 183,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "バイオフィルムの防御効果として正しいのはどれか。",
+    "correct": "食細胞の作用や抗菌薬の透過を妨げる",
+    "distractors": [
+      "抗菌薬を必ず菌体内へ集積させる",
+      "環境清掃を不要にする",
+      "菌の付着を完全に防ぐ"
+    ],
+    "explanation": "バイオフィルムは免疫反応や抗菌薬から菌を守り、難治化に関係する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-184",
+    "number": 184,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "バイオフィルムが形成され得る場所の組み合わせはどれか。",
+    "correct": "歯・呼吸器や尿路の粘膜面・カテーテル・人工弁",
+    "distractors": [
+      "歯・乾燥した未使用紙面・未開封包装・保管棚",
+      "呼吸器粘膜・血液培養ボトルの外箱・照明・天井",
+      "尿路粘膜・未開封消毒薬の内部・滅菌包装・床"
+    ],
+    "explanation": "生体表面と医療器材の異物表面の両方に形成され得る。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-185",
+    "number": 185,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "C. difficileの芽胞にアルコール擦式消毒が効きにくい主な理由はどれか。",
+    "correct": "芽胞が強固な外殻を持つため",
+    "distractors": [
+      "アルコールが芽胞の栄養になるため",
+      "C. difficileがウイルスだから",
+      "芽胞がグラム陰性球菌だから"
+    ],
+    "explanation": "アルコールは通常の栄養型細菌には有効でも、芽胞そのものの失活には不十分である。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-186",
+    "number": 186,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "C. difficileなど芽胞形成菌への手指衛生で重視することはどれか。",
+    "correct": "施設手順に従い、流水と石けんで芽胞を物理的に除去する",
+    "distractors": [
+      "アルコールを乾く前に拭き取る",
+      "手袋だけ交換し手指衛生を省略する",
+      "水だけで数秒すすぐ"
+    ],
+    "explanation": "芽胞を物理的に洗い流すことが重要となる。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-187",
+    "number": 187,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "C. difficileの環境対策として適切なのはどれか。",
+    "correct": "十分な清掃後、芽胞に有効な製品を表示どおり使用する",
+    "distractors": [
+      "アルコールだけを短時間噴霧する",
+      "汚染リネンを病室へ放置する",
+      "環境清掃を行わず空気清浄機だけを使う"
+    ],
+    "explanation": "次亜塩素酸ナトリウムなど、芽胞への有効性が確認された製品を施設手順で使用する。",
+    "sourceType": "lecture"
+  },
+  {
+    "id": "icg-188",
+    "number": 188,
+    "lecture": 2,
+    "category": "バイオフィルム・芽胞",
+    "question": "耐性菌対策の最終的な共通基盤はどれか。",
+    "correct": "標準予防策、必要な接触予防策、環境清掃、手指衛生の徹底",
+    "distractors": [
+      "標準予防策、空気予防策、環境清掃の中止、手指衛生",
+      "感染経路別予防策、予防的抗菌薬、環境清掃、手指衛生",
+      "標準予防策、接触予防策、環境への抗菌薬散布、手袋交換のみ"
+    ],
+    "explanation": "バイオフィルム、プラスミド、芽胞などの機序が異なっても、伝播を断つ基本行動が重要である。",
+    "sourceType": "lecture"
+  }
+]
