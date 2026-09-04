@@ -89,6 +89,11 @@ const resistanceLabels: Record<string, readonly ResistanceLabel[]> = {
       { code: 'MSSA', meaning: 'メチシリン感受性黄色ブドウ球菌', tone: 'susceptible' },
       { code: 'MRSA', meaning: 'メチシリン耐性黄色ブドウ球菌', tone: 'resistant' },
   ],
+  'Streptococcus pneumoniae': [
+    { code: 'PSSP', meaning: 'ペニシリン感受性肺炎球菌', tone: 'susceptible' },
+    { code: 'PISP', meaning: 'ペニシリン低感受性肺炎球菌', tone: 'resistant' },
+    { code: 'PRSP', meaning: 'ペニシリン耐性肺炎球菌', tone: 'resistant' },
+  ],
   'Enterococcus spp.': [
     { code: 'VRE', meaning: 'バンコマイシン耐性腸球菌', tone: 'resistant' },
   ],
@@ -99,6 +104,12 @@ const resistanceLabels: Record<string, readonly ResistanceLabel[]> = {
   'Klebsiella pneumoniae': [
     { code: 'ESBL産生菌', meaning: 'ESBLという酵素をつくる菌', tone: 'resistant' },
     { code: 'CRE', meaning: 'カルバペネム耐性腸内細菌目細菌', tone: 'resistant' },
+  ],
+  'Haemophilus influenzae': [
+    { code: 'BLNAS', meaning: 'βラクタマーゼ非産生・アンピシリン感受性', tone: 'susceptible' },
+    { code: 'BLNAR', meaning: 'βラクタマーゼ非産生・アンピシリン耐性', tone: 'resistant' },
+    { code: 'BLPAR', meaning: 'βラクタマーゼ産生・アンピシリン耐性', tone: 'resistant' },
+    { code: 'BLPACR', meaning: 'βラクタマーゼ産生・AMPC/CVA耐性', tone: 'resistant' },
   ],
   'Pseudomonas aeruginosa': [
     { code: 'MDRP', meaning: '多剤耐性緑膿菌', tone: 'resistant' },
@@ -184,6 +195,8 @@ export default function GramStain() {
         <a href="https://amr.ncgm.go.jp/pdf/20231116_02.pdf" target="_blank" rel="noreferrer">厚生労働省／AMR臨床リファレンスセンター「抗微生物薬適正使用の手引き 第三版 別冊」</a>
         <a href="https://www.niid.go.jp/niid/images/lab-manual/ResistantBacteria20200604.pdf" target="_blank" rel="noreferrer">国立感染症研究所「病原体検出マニュアル 薬剤耐性菌」</a>
         <a href="https://www.cdc.gov/staphylococcus-aureus/about/index.html" target="_blank" rel="noreferrer">CDC「Staphylococcus aureus Basics」</a>
+        <a href="https://www.niid.go.jp/niid/images/idsc/iasr/44/515.pdf" target="_blank" rel="noreferrer">国立感染症研究所「病原微生物検出情報 Vol. 44 No. 1」</a>
+        <a href="https://www.mhlw.go.jp/content/10800000/001080954.pdf" target="_blank" rel="noreferrer">厚生労働省「臨床検査技師国家試験出題基準（令和7年版）」</a>
       </footer>
     </StudyPage>
   );
