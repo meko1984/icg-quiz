@@ -27,6 +27,13 @@ const summaries = [
     description: '紫／ピンクと、球菌／桿菌から代表菌を見る',
     keywords: 'グラム染色 グラム陽性 グラム陰性 球菌 桿菌 GPC GNC GPR GNR 黄色ブドウ球菌 肺炎球菌 腸球菌 モラクセラ C difficile 大腸菌 肺炎桿菌 インフルエンザ菌 緑膿菌 カンピロバクター',
   },
+  {
+    href: '/summary/drug-abbreviations/',
+    category: '微生物・薬剤',
+    title: '抗菌薬の略称と製品名',
+    description: '30剤の正式名・製品・効く菌の目安を確認',
+    keywords: '抗菌薬 略称 略語 一般名 成分名 製品名 販売名 商品名 抗菌スペクトル 感受性 GPC GNC GPR GNR SBT ABPC AMPC CVA PIPC TAZ CEZ CTM CPZ CTRX CZOP CDTR PI FMOX IPM CS MEPM BIPM DRPM TBPM AMK ABK GM AZM CLDM MINO VCM FOM LZD CPFX LVFX GRNX ST ユナシン サワシリン オーグメンチン ペントシリン ゾシン セファメジン パンスポリン スルペラゾン ロセフィン ファーストシン メイアクト フルマリン チエナム メロペン オメガシン フィニバックス オラペネム ビクリン ハベカシン ゲンタシン ジスロマック ダラシン ミノマイシン バンコマイシン ホスミシン ザイボックス シプロキサン クラビット ジェニナック バクタ',
+  },
 ] as const;
 
 const allQuestions = questionData as SourceQuestion[];

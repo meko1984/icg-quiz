@@ -10,7 +10,7 @@ export default function Summary() {
         <Link className="back-button" href="/">← タイトルへ</Link>
         <p className="eyebrow">QUICK STUDY</p>
         <h1>サクッとまとめ</h1>
-        <p className="lead">気になる章を選び、要点を確認できます。<br />まずは、この3つからお選びください。</p>
+        <p className="lead">気になる章を選び、要点を確認できます。<br />まずは、この4つからお選びください。</p>
         <nav className="menu-list" aria-label="まとめの章一覧">
           <Link className="menu-link menu-summary" href="/summary/5moments/">
             <span className="menu-symbol" aria-hidden="true">01</span>
@@ -25,6 +25,11 @@ export default function Summary() {
           <Link className="menu-link menu-gram" href="/summary/gram-stain/">
             <span className="menu-symbol" aria-hidden="true">03</span>
             <span className="menu-copy"><small>微生物・形態</small><strong>グラム染色 × 菌の形</strong><small>紫／ピンクと、球菌／桿菌から代表菌を見る</small></span>
+            <span className="menu-arrow" aria-hidden="true">→</span>
+          </Link>
+          <Link className="menu-link menu-drugs" href="/summary/drug-abbreviations/">
+            <span className="menu-symbol" aria-hidden="true">04</span>
+            <span className="menu-copy"><small>微生物・薬剤</small><strong>抗菌薬の略称と製品名</strong><small>30剤の正式名・製品・効く菌の目安を確認</small></span>
             <span className="menu-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
