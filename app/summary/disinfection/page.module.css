@@ -1,0 +1,30 @@
+.high { --accent: #246a5c; --surface: #edf6f2; --edge: #c6dfd6; }
+.middle { --accent: #83501c; --surface: #fff4e9; --edge: #ead4b8; }
+.low { --accent: #66508a; --surface: #f3f1fa; --edge: #dcd3eb; }
+.index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.index a { min-width: 0; display: grid; align-content: start; gap: 5px; padding: 13px; border: 1px solid var(--edge); border-radius: 12px; background: var(--surface); color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
+.index small { font-size: 12px; }
+.index strong { font-size: 14px; line-height: 1.6; }
+.index a:hover { text-decoration: underline; }
+.index a:focus-visible, .source:focus-visible { outline: 3px solid #176b77; outline-offset: 3px; }
+.cards { display: grid; gap: 22px; margin-top: 26px; min-width: 0; }
+.card { min-width: 0; max-width: 100%; padding: 22px; border: 1px solid var(--edge); border-top: 5px solid var(--accent); border-radius: 16px; background: white; scroll-margin-top: 20px; overflow-wrap: anywhere; }
+.card:target { outline: 2px solid var(--accent); outline-offset: 3px; }
+.badge { display: inline-block; margin-bottom: 10px; padding: 4px 10px; border-radius: 6px; background: var(--surface); color: var(--accent); font-size: 14px; font-weight: 800; }
+.card h2 { color: var(--accent); margin-bottom: 6px; }
+.card .alias { margin: 0; color: #59676b; font-size: 13px; }
+.card > p { margin: 15px 0; font-size: 16px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.facts > div { min-width: 0; padding: 15px; border-radius: 11px; background: var(--surface); }
+.card h3 { margin: 0 0 8px; color: var(--accent); font-size: 14px; line-height: 1.6; }
+.facts ul { margin: 0; padding-left: 1.2em; font-size: 14px; line-height: 1.85; }
+.facts li + li { margin-top: 5px; }
+.caution { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--edge); }
+.caution p { margin: 0; font-size: 14px; }
+.source { display: inline-block; margin-top: 14px; color: var(--accent); font-size: 12px; line-height: 1.7; text-underline-offset: 3px; }
+@media (max-width: 560px) {
+  .index { grid-template-columns: 1fr; }
+  .index a { grid-template-columns: 54px minmax(0, 1fr); align-items: baseline; }
+  .card { padding: 17px 14px; }
+  .facts { grid-template-columns: 1fr; }
+}

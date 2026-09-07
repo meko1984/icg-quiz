@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import type { ReactNode } from 'react';
+import { Suspense, type ReactNode } from 'react';
+import ReturnToQuizNotice from './ReturnToQuizNotice';
 
 export default function StudyPage({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export default function StudyPage({ title, children }: { title: string; children
           <Link className="back-button" href="/summary/">← 章を選ぶ</Link>
           <Link className="back-button" href="/">タイトルへ</Link>
         </nav>
+        <Suspense fallback={null}><ReturnToQuizNotice /></Suspense>
         <h1>{title}</h1>
         {children}
         <nav className="study-actions" aria-label="学習を続ける">

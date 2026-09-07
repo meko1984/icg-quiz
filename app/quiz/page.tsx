@@ -69,6 +69,12 @@ function formatResultDate(value: string) {
   }).format(date);
 }
 
+function withQuizReturn(href: string) {
+  const hashIndex = href.indexOf('#');
+  if (hashIndex === -1) return `${href}?from=quiz`;
+  return `${href.slice(0, hashIndex)}?from=quiz${href.slice(hashIndex)}`;
+}
+
 export default function Home() {
   const [screen, setScreen] = useState<Screen>('home');
   const [lecture, setLecture] = useState<LectureFilter>('all');
@@ -246,6 +252,7 @@ export default function Home() {
   if (screen === 'quiz' && current) {
     const progress = ((index + (answered ? 1 : 0)) / session.length) * 100;
     const relatedStudy = getRelatedStudy(current);
+    const relatedStudyHref = relatedStudy ? withQuizReturn(relatedStudy.href) : null;
     return (
       <main className="app-shell quiz-view">
         <section className="quiz-card" aria-live="polite">
@@ -292,8 +299,8 @@ export default function Home() {
                 <aside className="related-study" aria-label="関連するサクッとまとめ">
                   <span>サクッと補足</span>
                   <p>{relatedStudy.note}</p>
-                  <Link href={relatedStudy.href}>
-                    <span><small>関連ページ</small><strong>{relatedStudy.title}</strong></span>
+                  <Link href={relatedStudyHref!} target="_blank" rel="noreferrer">
+                    <span><small>関連ページ・別タブで開きます</small><strong>{relatedStudy.title}</strong></span>
                     <b aria-hidden="true">→</b>
                   </Link>
                 </aside>

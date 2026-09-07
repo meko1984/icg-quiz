@@ -7,6 +7,13 @@ import type { SourceQuestion } from '../lib/quiz';
 
 const summaries = [
   {
+    href: '/summary/resistance/',
+    category: '微生物・薬剤',
+    title: '抗菌薬耐性の4つのメカニズム',
+    description: '不活化・作用点の変化・修飾・濃度低下と、対策・治療',
+    keywords: '抗菌薬 薬剤耐性 耐性菌 メカニズム 機序 不活化 作用点の変化 作用点の修飾 保護 菌体内濃度の低下 メチル化 分解 修飾 βラクタマーゼ ESBL CRE CPE カルバペネマーゼ MRSA VRE PBP2a ポーリン OprD 排出ポンプ 緑膿菌 大腸菌 肺炎桿菌 標的 作用点 膜透過性 保菌 感染症 接触予防策 治療',
+  },
+  {
     href: '/summary/5moments/',
     category: '手指衛生',
     title: '5moments',
