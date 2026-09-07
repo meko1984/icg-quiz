@@ -14,6 +14,13 @@ const summaries = [
     keywords: '手指衛生 5 moments 5moments ファイブモーメンツ 手洗い 患者に触れる前 無菌操作 体液暴露 患者に触れた後 患者周辺環境',
   },
   {
+    href: '/summary/disinfection/',
+    category: '器材・薬剤',
+    title: '消毒薬の水準と使い分け',
+    description: 'Spaulding分類と、高・中・低水準の代表薬を整理',
+    keywords: '消毒薬 消毒水準 高水準 中水準 低水準 Spaulding スポルディング クリティカル セミクリティカル ノンクリティカル グルタラール グルタルアルデヒド フタラール 過酢酸 次亜塩素酸ナトリウム アルコール ポビドンヨード 第四級アンモニウム塩 クロルヘキシジン 両性界面活性剤 内視鏡',
+  },
+  {
     href: '/summary/antibiotics/',
     category: '微生物・薬剤',
     title: '抗菌薬の違い',

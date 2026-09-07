@@ -176,7 +176,7 @@ export default function GramStain() {
         </div>
       </section>
 
-      <section className="resistance-section" aria-labelledby="resistance-title">
+      <section className="resistance-section" id="resistance" aria-labelledby="resistance-title">
         <div className="section-heading-row">
           <div><p className="section-kicker">SAME BACTERIA, DIFFERENT NAME</p><h2 id="resistance-title">同じ菌でも、薬の効き方で呼び名が変わる</h2></div>
         </div>
