@@ -5,6 +5,7 @@ import Link from 'next/link';
 import questionData from '../data/questions.json';
 import { createSession, type LectureFilter, type QuestionCount, type SessionQuestion, type SourceQuestion } from '../lib/quiz';
 import { getRelatedStudy } from '../lib/related-study';
+import { createRoundSession, getRound, readRounds, type RoundHistory } from '../lib/quiz-rounds';
 
 type Screen = 'home' | 'quiz' | 'result' | 'history';
 type SessionResult = {
@@ -16,6 +17,7 @@ type SessionResult = {
   percent: number;
 };
 type LearningHistory = {
+  rounds: RoundHistory;
   wrongIds: string[];
   answered: number;
   correct: number;
@@ -25,8 +27,46 @@ type LearningHistory = {
 };
 
 const HISTORY_KEY = 'icg-quiz-history-v1';
-const EMPTY_HISTORY: LearningHistory = { wrongIds: [], answered: 0, correct: 0, sessions: 0, bestPercent: 0, results: [] };
+const EMPTY_HISTORY: LearningHistory = { rounds: {}, wrongIds: [], answered: 0, correct: 0, sessions: 0, bestPercent: 0, results: [] };
 const allQuestions = questionData as SourceQuestion[];
+
+type ActiveSession = {
+  session: SessionQuestion[];
+  index: number;
+  selected: string | null;
+  score: number;
+  wrongIds: string[];
+  scope: string;
+  lecture: LectureFilter;
+  count: QuestionCount;
+  roundScope: LectureFilter | null;
+  round: number | null;
+};
+
+function readActive(): ActiveSession | null {
+  try {
+    const saved = JSON.parse(localStorage.getItem(HISTORY_KEY) ?? '{}').active as ActiveSession | undefined;
+    if (!saved || !Array.isArray(saved.session) || !saved.session.length ||
+      !Number.isInteger(saved.index) || saved.index < 0 || saved.index >= saved.session.length ||
+      !Number.isInteger(saved.score) || saved.score < 0 || saved.score > saved.session.length ||
+      !Array.isArray(saved.wrongIds) || !saved.wrongIds.every((id) => typeof id === 'string') ||
+      typeof saved.scope !== 'string' || !['all', 1, 2].includes(saved.lecture) ||
+      ![10, 20, 30, 'all'].includes(saved.count) ||
+      ![null, 'all', 1, 2].includes(saved.roundScope) ||
+      (saved.roundScope !== null && (!Number.isSafeInteger(saved.round) || Number(saved.round) < 1))) return null;
+    const source = new Map(allQuestions.map((q) => [q.id, q]));
+    const restored: SessionQuestion[] = [];
+    for (const item of saved.session) {
+      const question = source.get(item?.id);
+      if (!question || !Array.isArray(item.choices) || item.choices.length !== 4 ||
+        new Set(item.choices).size !== 4 || !item.choices.every((choice) => [question.correct, ...question.distractors].includes(choice))) return null;
+      restored.push({ ...question, choices: item.choices });
+    }
+    if (new Set(restored.map((q) => q.id)).size !== restored.length ||
+      (saved.selected !== null && !restored[saved.index].choices.includes(saved.selected))) return null;
+    return { ...saved, session: restored };
+  } catch { return null; }
+}
 
 function readHistory(): LearningHistory {
   try {
@@ -41,6 +81,7 @@ function readHistory(): LearningHistory {
       )).slice(0, 50)
       : [];
     return {
+      rounds: readRounds(parsed.rounds),
       wrongIds: Array.isArray(parsed.wrongIds) ? parsed.wrongIds.filter((id): id is string => typeof id === 'string') : [],
       answered: Number.isFinite(parsed.answered) ? Number(parsed.answered) : 0,
       correct: Number.isFinite(parsed.correct) ? Number(parsed.correct) : 0,
@@ -87,20 +128,40 @@ export default function Home() {
   const [sessionScope, setSessionScope] = useState('第1回・第2回');
   const [history, setHistory] = useState<LearningHistory>(EMPTY_HISTORY);
   const [historyReady, setHistoryReady] = useState(false);
+  const [roundScope, setRoundScope] = useState<LectureFilter | null>(null);
+  const [sessionRound, setSessionRound] = useState<number | null>(null);
+  const [paused, setPaused] = useState<ActiveSession | null>(null);
+  const [storageError, setStorageError] = useState(false);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
       setHistory(readHistory());
+      const active = readActive();
+      setPaused(active);
+      if (active) {
+        setLecture(active.lecture);
+        setQuestionCount(active.count);
+      }
       setHistoryReady(true);
     });
     return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
-    if (historyReady) localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-  }, [history, historyReady]);
+    if (!historyReady) return;
+    const active: ActiveSession | null = screen === 'quiz' && session.length
+      ? { session, index, selected, score, wrongIds: wrongThisSession, scope: sessionScope, lecture, count: questionCount, roundScope, round: sessionRound }
+      : paused;
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify({ ...history, active }));
+    } catch {
+      const timer = window.setTimeout(() => setStorageError(true), 0);
+      return () => window.clearTimeout(timer);
+    }
+  }, [history, historyReady, screen, session, index, selected, score, wrongThisSession, sessionScope, lecture, questionCount, roundScope, sessionRound, paused]);
 
   useEffect(() => {
+    if (!historyReady) return;
     const requestedIds = new URLSearchParams(window.location.search).get('ids')?.split(',').filter(Boolean) ?? [];
     if (!requestedIds.length) return;
     const availableIds = new Set(allQuestions.map((question) => question.id));
@@ -114,10 +175,16 @@ export default function Home() {
       setScore(0);
       setWrongThisSession([]);
       setSessionScope(`検索結果・${nextSession.length}問`);
+      setPaused(null);
+      setRoundScope(null);
+      setSessionRound(null);
       setScreen('quiz');
+      const url = new URL(window.location.href);
+      url.searchParams.delete('ids');
+      window.history.replaceState(window.history.state, '', url);
     }, 0);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [historyReady]);
 
   const availableCount = useMemo(
     () => allQuestions.filter((question) => lecture === 'all' || question.lecture === lecture).length,
@@ -125,18 +192,23 @@ export default function Home() {
   );
 
   const current = session[index];
+  const roundProgress = getRound(allQuestions, lecture, history.rounds);
+  const activeProgress = roundScope === null ? null : getRound(allQuestions, roundScope, history.rounds);
   const answered = selected !== null;
   const isCorrect = answered && selected === current?.correct;
   const percent = session.length ? Math.round((score / session.length) * 100) : 0;
 
   function begin(ids?: string[]) {
-    const nextSession = createSession(
-      allQuestions,
-      ids ? 'all' : lecture,
-      ids ? 'all' : questionCount,
-      ids,
-    );
+    if (!historyReady) return;
+    const nextRound = ids ? null : createRoundSession(allQuestions, lecture, questionCount, history.rounds);
+    const nextSession = nextRound?.questions ?? createSession(allQuestions, 'all', 'all', ids);
     if (!nextSession.length) return;
+    if (nextRound) {
+      setHistory((previous) => ({ ...previous, rounds: { ...previous.rounds, [lecture]: { round: nextRound.progress.round, answeredIds: nextRound.progress.answeredIds } } }));
+    }
+    setPaused(null);
+    setRoundScope(ids ? null : lecture);
+    setSessionRound(nextRound?.progress.round ?? null);
     setSession(nextSession);
     setIndex(0);
     setSelected(null);
@@ -159,6 +231,13 @@ export default function Home() {
       else wrongIds.add(current.id);
       return {
         ...previous,
+        rounds: roundScope === null ? previous.rounds : {
+          ...previous.rounds,
+          [roundScope]: {
+            round: sessionRound ?? 1,
+            answeredIds: [...new Set([...(previous.rounds[roundScope]?.answeredIds ?? []), current.id])],
+          },
+        },
         wrongIds: [...wrongIds],
         answered: previous.answered + 1,
         correct: previous.correct + (correct ? 1 : 0),
@@ -176,7 +255,7 @@ export default function Home() {
       results: [{
         id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
         date: new Date().toISOString(),
-        scope: sessionScope,
+        scope: `${sessionScope}${sessionRound ? `・${sessionRound}周目` : ''}`,
         total: session.length,
         correct: finalScore,
         percent: finalPercent,
@@ -196,6 +275,9 @@ export default function Home() {
   }
 
   function goHome() {
+    if (screen === 'quiz' && session.length) {
+      setPaused({ session, index, selected, score, wrongIds: wrongThisSession, scope: sessionScope, lecture, count: questionCount, roundScope, round: sessionRound });
+    }
     setScreen('home');
     setSession([]);
     setSelected(null);
@@ -203,8 +285,26 @@ export default function Home() {
   }
 
   function resetHistory() {
-    if (!window.confirm('学習記録と間違いリストをリセットしますか？')) return;
+    if (!window.confirm('学習記録・間違いリスト・周回の進捗・中断中のクイズをすべてリセットしますか？')) return;
     setHistory(EMPTY_HISTORY);
+    setPaused(null);
+  }
+
+  function resume() {
+    if (!paused) return;
+    setSession(paused.session);
+    setIndex(paused.index);
+    setSelected(paused.selected);
+    setScore(paused.score);
+    setWrongThisSession(paused.wrongIds);
+    setSessionScope(paused.scope);
+    setLecture(paused.lecture);
+    setQuestionCount(paused.count);
+    setRoundScope(paused.roundScope);
+    setSessionRound(paused.round);
+    setPaused(null);
+    setScreen('quiz');
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
   if (screen === 'history') {
@@ -243,7 +343,7 @@ export default function Home() {
             </div>
           )}
 
-          {history.answered > 0 && <button className="danger-text-button" type="button" onClick={resetHistory}>成績と復習記録をすべて消す</button>}
+          {(history.answered > 0 || paused) && <button className="danger-text-button" type="button" onClick={resetHistory}>成績・復習・周回記録をすべて消す</button>}
         </section>
       </main>
     );
@@ -264,6 +364,8 @@ export default function Home() {
           <div className="progress-track" aria-label={`進捗 ${Math.round(progress)}%`}>
             <span style={{ width: `${progress}%` }} />
           </div>
+          {activeProgress && <p className="round-status">{sessionScope}・{sessionRound}周目：{activeProgress.answeredIds.length} / {activeProgress.total}問 回答済み</p>}
+          {storageError && <p role="alert">学習記録を保存できません。ブラウザの保存設定や空き容量を確認してください。</p>}
           {current.sourceType === 'exam-extra' && <div className="extra-badge">講義資料外・試験範囲指定</div>}
           <p className="eyebrow">QUESTION {String(index + 1).padStart(2, '0')}</p>
           <h1 className="question-text">{current.question}</h1>
@@ -312,9 +414,8 @@ export default function Home() {
             <button className="primary-button next-button" type="button" onClick={nextQuestion}>
               {index === session.length - 1 ? '結果を見る' : '次の問題へ'}
             </button>
-          ) : (
-            <button className="text-button" type="button" onClick={goHome}>クイズを中断する</button>
-          )}
+          ) : null}
+          <button className="text-button" type="button" onClick={goHome}>保存して中断する</button>
         </section>
       </main>
     );
@@ -327,6 +428,9 @@ export default function Home() {
         <section className="result-card">
           <p className="eyebrow">SESSION COMPLETE</p>
           <h1>お疲れさまでした！</h1>
+          {activeProgress && <p className="round-status">{!activeProgress.remainingIds.length
+            ? `${sessionScope}の${sessionRound}周目を完了しました！ 次の通常クイズから${Number(sessionRound) + 1}周目が始まります。`
+            : `${sessionScope}・${sessionRound}周目の残りは${activeProgress.remainingIds.length}問です。`}</p>}
           <div className="score-ring" style={{ '--score': `${percent * 3.6}deg` } as CSSProperties}>
             <div><strong>{percent}</strong><span>%</span></div>
           </div>
@@ -383,11 +487,24 @@ export default function Home() {
           </div>
         </div>
 
-        <button className="primary-button" type="button" onClick={() => begin()}>クイズを始める</button>
+        <section className="round-status" aria-label="周回の進捗">
+          <strong>{lecture === 'all' ? 'すべて' : `第${lecture}回`}・{roundProgress.round}周目{roundProgress.remainingIds.length === 0 ? ' 完了' : ''}</strong>
+          <p>{roundProgress.answeredIds.length} / {roundProgress.total}問 回答済み{roundProgress.remainingIds.length > 0 ? `・残り${roundProgress.remainingIds.length}問` : `・次は${roundProgress.round + 1}周目`}</p>
+          <div className="progress-track"><span style={{ width: `${roundProgress.total ? roundProgress.answeredIds.length / roundProgress.total * 100 : 0}%` }} /></div>
+          <small>全問に回答するまで、未回答の問題からランダムに出題します。最後は残りの問数で終了します。「すべて・第1回・第2回」の進捗は別々です。復習・検索クイズは周回に含みません。</small>
+        </section>
+        {paused && <section className="round-status">
+          <strong>中断中：{paused.scope}{paused.round ? `・${paused.round}周目` : ''}</strong>
+          <p>{paused.index + 1} / {paused.session.length}問目{paused.selected !== null ? '・解説表示中' : ''}から再開できます。</p>
+          <button className="secondary-button" type="button" onClick={resume}>途中から再開する</button>
+          <small>新しいクイズを始めると、中断中のクイズを置き換えます。回答済みの周回進捗は残ります。</small>
+        </section>}
+        {storageError && <p role="alert">学習記録を保存できません。ブラウザの保存設定や空き容量を確認してください。</p>}
+        <button className="primary-button" disabled={!historyReady} type="button" onClick={() => begin()}>クイズを始める</button>
 
         <section className="review-panel">
           <div><span>間違い復習</span><strong>{history.wrongIds.length}問</strong></div>
-          <button disabled={!history.wrongIds.length} type="button" onClick={() => begin(history.wrongIds)}>復習する</button>
+          <button disabled={!historyReady || !history.wrongIds.length} type="button" onClick={() => begin(history.wrongIds)}>復習する</button>
         </section>
 
         <button className="history-panel" type="button" onClick={() => setScreen('history')}>

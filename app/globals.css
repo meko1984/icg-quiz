@@ -594,3 +594,16 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
   .quiz-meta span:last-child { margin-left: 0; }
   .result-grid { gap: 5px; }
 }
+.round-status {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #cbdfe1;
+  border-radius: 16px;
+  background: #f1f8f8;
+  color: #244c50;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.round-status p { margin: 6px 0 10px; }
+.round-status small { display: block; margin-top: 10px; }
