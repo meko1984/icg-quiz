@@ -438,7 +438,7 @@
     "id": "icg-030",
     "number": 30,
     "lecture": 1,
-    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "category": "手指衛生 5 Moments",
     "question": "手指衛生5 MomentsのMoment 1はどれか。",
     "correct": "患者に触れる前",
     "distractors": [
@@ -453,7 +453,7 @@
     "id": "icg-031",
     "number": 31,
     "lecture": 1,
-    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "category": "手指衛生 5 Moments",
     "question": "手指衛生5 MomentsのMoment 2はどれか。",
     "correct": "清潔操作または無菌操作の前",
     "distractors": [
@@ -468,7 +468,7 @@
     "id": "icg-032",
     "number": 32,
     "lecture": 1,
-    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "category": "手指衛生 5 Moments",
     "question": "手指衛生5 MomentsのMoment 3はどれか。",
     "correct": "体液曝露リスクの後",
     "distractors": [
@@ -483,7 +483,7 @@
     "id": "icg-033",
     "number": 33,
     "lecture": 1,
-    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "category": "手指衛生 5 Moments",
     "question": "手指衛生5 MomentsのMoment 4はどれか。",
     "correct": "患者に触れた後",
     "distractors": [
@@ -498,7 +498,7 @@
     "id": "icg-034",
     "number": 34,
     "lecture": 1,
-    "category": "手指衛生 5 Moments（講義資料外・出題指定）",
+    "category": "手指衛生 5 Moments",
     "question": "手指衛生5 MomentsのMoment 5はどれか。",
     "correct": "患者周辺環境に触れた後",
     "distractors": [
@@ -1369,7 +1369,7 @@
     "number": 92,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "第1回講義で示された数値として、免疫がない場合、HBVの針刺し時感染率はどの程度とされるか。",
+    "question": "HBV陽性血液による針刺しで、感染源の感染性が高く本人に免疫がない場合、感染率はどの程度に達するか。",
     "correct": "30%以上",
     "distractors": [
       "約10%程度",
@@ -1414,7 +1414,7 @@
     "number": 95,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "第1回講義で示された数値として、HCV感染者の血液による針刺し時の感染率はどれか。",
+    "question": "HCV感染者の血液による針刺し後の感染率について、過去の集計で示された代表値はどれか。",
     "correct": "約1.8%",
     "distractors": [
       "30%以上",
@@ -1451,7 +1451,7 @@
       "感染者の約10分の1が慢性肝炎となり、肝硬変・肝がんへ進展する",
       "感染者のほぼ全例が慢性肝炎となり、肝硬変・肝がんへ進展する"
     ],
-    "explanation": "講義では約3分の2の慢性化を学習値としています。慢性感染した人が全員、肝硬変・肝がんになるという意味ではありません。WHOは約70%（55〜85%）が慢性感染となるとし、進行は年齢、飲酒、併存疾患や治療などにより変わります。",
+    "explanation": "HCV感染者の約3分の2が慢性化するという値は、代表的な目安です。慢性感染した人が全員、肝硬変・肝がんになるという意味ではありません。WHOは約70%（55〜85%）が慢性感染となるとし、進行は年齢、飲酒、併存疾患や治療などにより変わります。",
     "sourceType": "lecture"
   },
   {
@@ -1474,14 +1474,14 @@
     "number": 99,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "第1回講義で示された数値として、HIVの針刺し時感染率はどの程度とされるか。",
+    "question": "HIV感染血液への針刺しなど、経皮曝露による平均感染リスクに最も近い値はどれか。",
     "correct": "0.3%",
     "distractors": [
       "30%以上",
       "約10%程度",
       "約1%程度"
     ],
-    "explanation": "講義の学習値は約0.3%です。米国2025年職業曝露ガイドラインは、HIV感染血液への経皮曝露の平均リスクを0.23%と示しています。いずれも曝露条件で変わる集団の推定値で、予防内服後の感染率ではありません。曝露後は直ちに報告し、PEP（post-exposure prophylaxis：曝露後予防）の適応を評価します。",
+    "explanation": "従来から用いられる代表値は約0.3%です。米国2025年職業曝露ガイドラインは、HIV感染血液への経皮曝露の平均リスクを0.23%と示しています。いずれも曝露条件で変わる集団の推定値で、予防内服後の感染率ではありません。曝露後は直ちに報告し、PEP（post-exposure prophylaxis：曝露後予防）の適応を評価します。",
     "sourceType": "lecture"
   },
   {
@@ -1706,7 +1706,7 @@
       "培養結果を待たず病原体名を確定する",
       "消毒薬で検体を処理してから提出する"
     ],
-    "explanation": "適切な検体採取が、その後のグラム染色、培養、感受性試験の土台となる。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
+    "explanation": "適切な検体採取が、その後のグラム染色、培養、感受性試験の土台となる。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -1721,7 +1721,7 @@
       "S/I/R判定に基づいて抗菌薬を最適化する",
       "感染部位から質の高い検体を採取する"
     ],
-    "explanation": "グラム染色は迅速な初期情報を与えるが、最終同定や感受性判定そのものではない。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
+    "explanation": "グラム染色は迅速な初期情報を与えるが、最終同定や感受性判定そのものではない。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -1736,7 +1736,7 @@
       "S/I/R判定に基づいて抗菌薬を最適化する",
       "感染部位から質の高い検体を採取する"
     ],
-    "explanation": "培養・同定によって原因菌の正体を明らかにする。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
+    "explanation": "培養・同定によって原因菌の正体を明らかにする。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -2171,7 +2171,7 @@
       "通常の投与条件では治療効果が期待しにくい",
       "阻止円を測定できず判定不能である"
     ],
-    "explanation": "Iは講義でIntermediate（中間）と表記しています。CLSI（Clinical and Laboratory Standards Institute：米国臨床検査標準協会）とEUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）では定義が異なります。EUCASTのIはSusceptible, increased exposure（曝露量を増やせば感性）で、投与条件や感染部位で薬剤曝露を高めることが前提です。Iを一律に耐性扱いせず、検査室の採用基準に従います。",
+    "explanation": "IはCLSI（Clinical and Laboratory Standards Institute：米国臨床検査標準協会）ではIntermediate（中間）を表します。EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）のIはSusceptible, increased exposure（曝露量を増やせば感性）で、投与条件や感染部位で薬剤曝露を高めることが前提です。Iを一律に耐性扱いせず、検査室の採用基準に従います。",
     "sourceType": "lecture"
   },
   {

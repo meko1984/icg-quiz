@@ -23,7 +23,7 @@ export default function Exposure() {
       <article className={s.card}><span className={s.tag}>経過観察</span><h3>記録と再検査までをひと続きに</h3><p>事故報告書に残し、受診・内服・再検査の予定を確認します。内服中の副作用や発熱・発疹・黄疸などがあれば、次の予約日を待たず担当医に連絡します。</p><p>再発防止には、安全器材、リキャップを避けた廃棄、飛散リスクに応じた眼・顔の防護が必要です。</p></article>
     </div></section>
     <p className={s.callout}>この図は学習用です。実際の曝露では、施設の緊急連絡先と最新の手順を優先してください。<Link href="/summary/hepatitis-hiv/">感染経路・感染率・ワクチンを比較する →</Link></p>
-    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。3ステップの名称は第1回講義資料「曝露時対応」に合わせています。</p><ol>
+    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。洗浄・報告・検査と予防を、曝露直後から進める順に整理しています。</p><ol>
       <li><a href="https://hiv-guidelines.jp/2026/part16-2.htm">抗HIV治療ガイドライン2026：血液・体液曝露時の直後の対応</a></li>
       <li><a href="https://stacks.cdc.gov/view/cdc/183609/cdc_183609_DS1.pdf">米国公衆衛生局2025：職業上のHIV曝露と曝露後予防</a></li>
       <li><a href="https://www.cdc.gov/hepatitis-b/hcp/infection-control/index.html">CDC：医療現場でのHBV曝露への対応</a></li>

@@ -145,9 +145,9 @@ export default function DrugAbbreviations() {
         <a href="https://www.chemotherapy.or.jp/uploads/files/guideline/kobiseibutuyaku_guidance_2024.pdf" target="_blank" rel="noreferrer">日本化学療法学会「抗微生物薬適正使用の手引き」</a>
         <a href="https://www.mhlw.go.jp/content/10906000/001575316.pdf" target="_blank" rel="noreferrer">厚生労働省「抗微生物薬適正使用の手引き 第四版」</a>
         <a href="https://www.pmda.go.jp/PmdaSearch/iyakuSearch/" target="_blank" rel="noreferrer">PMDA 医療用医薬品 情報検索</a>
-        <p>略称・一般名・代表的な製品情報は、上記資料と各カードのPMDA掲載情報を2026年9月6日に確認しました。スペクトルは学習用の大まかな整理です。</p>
+        <p>略称・一般名・代表的な製品情報は、上記の出典と各カードのPMDA掲載情報を2026年9月6日に確認しました。スペクトルは学習用の大まかな整理です。</p>
       </section>
-      <p className="study-disclaimer">このページは名称と抗菌スペクトルの概略を学ぶ資料です。個別患者の薬剤選択、調製、投与量、投与方法の判断には使用できません。</p>
+      <p className="study-disclaimer">名称と抗菌スペクトルの概略を学ぶための一覧です。個別患者の薬剤選択、調製、投与量、投与方法の判断には使用できません。</p>
     </StudyPage>
   );
 }

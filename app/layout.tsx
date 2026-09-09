@@ -6,7 +6,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
   title: '感染制御クイズ',
-  description: '感染制御認定士講座の試験対策4択クイズ',
+  description: '感染制御の重要ポイントを学べる試験対策4択クイズ',
   applicationName: '感染制御クイズ',
   manifest: `${basePath}/manifest.webmanifest`,
   icons: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '感染制御クイズ',
-    description: '講義資料の重要ポイントを4択で反復できる試験対策クイズ',
+    description: '感染制御の重要ポイントを4択で反復できる試験対策クイズ',
     type: 'website',
     locale: 'ja_JP',
     images: [{ url: `${basePath}/og.png`, width: 1734, height: 911, alt: '感染制御クイズ' }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '感染制御クイズ',
-    description: '講義資料の重要ポイントを4択で反復できる試験対策クイズ',
+    description: '感染制御の重要ポイントを4択で反復できる試験対策クイズ',
     images: [`${basePath}/og.png`],
   },
 };

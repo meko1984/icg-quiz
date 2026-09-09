@@ -25,6 +25,6 @@ export default function Cleaning() {
       <p className={s.callout}><strong>対策：</strong>清潔な場所から汚れた場所へ進め、クロスの面・クロス自体・液を適切に交換します。使用済みクロスを清潔な洗浄液に再び浸さず、施設の手順に沿って交換します。血液・体液で汚染された場所は、清拭除去に加え適切な消毒が必要です。[2][3]</p>
     </section>
     <section className={s.section}><h2>使うときの6つの注意点</h2><div className={s.grid}>{cautions.map(([tag, title, text]) => <article className={s.card} key={tag}><span className={s.tag}>{tag}</span><h3>{title}</h3><p>{text}</p></article>)}</div><p className={s.note}>「何倍・何℃・何分」は製品と器材で異なります。説明書・安全データシートと施設手順を確認してください。[1–3]</p></section>
-    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。第1回講義「環境整備」、クイズ65・66問に関連します。</p><ol><li><a href="https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/cleaning.html">CDC：医療器材の洗浄</a></li><li><a href="https://www.cdc.gov/healthcare-associated-infections/hcp/cleaning-global/procedures.html">CDC：医療環境の清掃手順</a></li><li><a href="https://www.cdc.gov/infection-control/hcp/environmental-control/environmental-services.html">CDC：環境表面の清掃・消毒</a></li></ol></section>
+    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。</p><ol><li><a href="https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/cleaning.html">CDC：医療器材の洗浄</a></li><li><a href="https://www.cdc.gov/healthcare-associated-infections/hcp/cleaning-global/procedures.html">CDC：医療環境の清掃手順</a></li><li><a href="https://www.cdc.gov/infection-control/hcp/environmental-control/environmental-services.html">CDC：環境表面の清掃・消毒</a></li></ol></section>
   </div></StudyPage>;
 }

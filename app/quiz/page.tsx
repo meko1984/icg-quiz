@@ -414,9 +414,8 @@ export default function Home() {
           )}
 
           <div className="quiz-secondary">
-            <p>第{current.lecture}回 · {current.category.replace('（講義資料外・出題指定）', '')}</p>
+            <p>第{current.lecture}回 · {current.category}</p>
             {activeProgress && <p className="round-status">{sessionScope}・{sessionRound}周目：{activeProgress.answeredIds.length} / {activeProgress.total}問 回答済み</p>}
-            {current.sourceType === 'exam-extra' && <div className="extra-badge">講義資料外・試験範囲指定</div>}
             {storageError && <p role="alert">学習記録を保存できません。ブラウザの保存設定や空き容量を確認してください。</p>}
           </div>
           <button className="text-button" type="button" onClick={goHome}>保存して中断する</button>
@@ -465,7 +464,7 @@ export default function Home() {
         </header>
         <p className="eyebrow">INFECTION CONTROL STUDY</p>
         <h1>解いて確認</h1>
-        <p className="lead">講義資料の重要ポイントを、4択問題で短く反復できます。間違えた問題は端末内に保存され、あとからまとめて復習できます。</p>
+        <p className="lead">感染制御の重要ポイントを、4択問題で短く反復できます。間違えた問題は端末内に保存され、あとからまとめて復習できます。</p>
 
         <div className="stats-row" aria-label="収録状況">
           <div><strong>188</strong><span>全問題</span></div>
@@ -521,7 +520,7 @@ export default function Home() {
             累計 {history.answered}問・正答率 {Math.round((history.correct / history.answered) * 100)}%
           </div>
         )}
-        <p className="source-note">正答は講義資料に準拠しています。5 Momentsのみ試験範囲として追加しています。</p>
+        <p className="source-note">正答と解説は、感染制御の基本事項と各ページに示した出典に基づいています。</p>
       </section>
     </main>
   );

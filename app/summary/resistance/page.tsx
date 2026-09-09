@@ -83,8 +83,8 @@ export default function Resistance() {
         <aside className={styles.takeaway}><h3>耐性は、薬が効く流れを妨げる仕組み</h3><p>薬を壊す、標的を変える、標的を守る、必要な量を届かなくする。耐性菌が抗菌作用を持つのではなく、<strong>細菌が抗菌薬の作用を受けにくくなります。</strong>次の4つの図で、通常の働きと比べます。<a href="#source-1">[1]</a></p></aside>
       </section>
       <section id="mechanisms" className={styles.section}>
-        <h2>講義の4分類を、図でつかむ</h2>
-        <p className={styles.note}>第2回講義資料の分類に合わせています。「入れない・外へ出す」は、どちらも④菌体内濃度の低下です。1つの菌が複数の仕組みを持つことがあり、同じ菌種でも菌株ごとに異なります。図は働きの模式図で、正確な構造や縮尺を示すものではありません。<a href="#source-1">[1]</a></p>
+        <h2>4つの耐性機序を、図でつかむ</h2>
+        <p className={styles.note}>「入れない・外へ出す」は、どちらも④菌体内濃度の低下に含まれます。1つの菌が複数の仕組みを持つことがあり、同じ菌種でも菌株ごとに異なります。図は働きの模式図で、正確な構造や縮尺を示すものではありません。<a href="#source-1">[1]</a></p>
         <div className={styles.grid}>{mechanisms.map(m => <article key={m.id} className={styles.mechanism} id={m.id}>
           <header><span className={styles.number}>{m.number}</span><div><h3>{m.name}</h3><span className={styles.name}>{m.verb}</span></div></header>
           <div className={styles.usualAction}><b>薬が効く場合</b><p>{ordinaryActions[m.target]}</p></div>
@@ -135,10 +135,10 @@ export default function Resistance() {
         <aside className={styles.takeaway}><h3>「耐性の名前」だけで薬を決めない</h3><p><b>感染部位 × 感受性 × 患者の状態</b>で選びます。膿瘍のドレナージや感染したカテーテルの抜去など、感染源への対応も治療の一部です。</p></aside>
       </section>
       <nav className={styles.related} aria-label="関連するまとめ"><Link href="/summary/antibiotics/">抗菌薬の作用点を確認 →</Link><Link href="/summary/drug-abbreviations/">薬の略称・製品名を見る →</Link><Link href="/summary/5moments/">手指衛生のタイミング →</Link></nav>
-      <section className={styles.sources} aria-label="参考資料">
-        <h2>参考資料・このページの範囲</h2>
-        <p>学習用の代表例です。個々の患者への処方や感染対策の指示を代替するものではありません。抗菌作用の図解追加：2026年9月9日。既存の治療表の資料確認日：2026年9月7日。</p>
-        <p>分類・用語：第2回感染制御認定士講座「微生物学」配布資料の「抗菌薬耐性の4つのメカニズム」とメカニズム①〜④。菌の例・治療は以下の資料で補足しています。</p><ol>
+      <section className={styles.sources} aria-label="出典">
+        <h2>出典・確認日</h2>
+        <p>学習用の代表例です。個々の患者への処方や感染対策の指示を代替するものではありません。抗菌作用は2026年9月9日、治療情報は2026年9月7日に確認しています。</p>
+        <p>耐性機序の分類・用語、菌の例、治療の考え方は、以下の出典で確認しています。</p><ol>
           <li id="source-1"><a href="https://www.cdc.gov/antimicrobial-resistance/about/index.html">CDC：About Antimicrobial Resistance</a> — 耐性の仕組み</li>
           <li id="source-2"><a href="https://www.idsociety.org/practice-guideline/amr-guidance/">IDSA：2026 AMR Guidance</a> — ESBL・CRE・耐性緑膿菌の機序と治療</li>
           <li id="source-3"><a href="https://www.chemotherapy.or.jp/uploads/files/guideline/mrsa_guideline_2024.pdf">日本化学療法学会・日本感染症学会：MRSA感染症の診療ガイドライン2024</a></li>

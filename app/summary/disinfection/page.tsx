@@ -183,7 +183,7 @@ export default function Disinfection() {
               <h3>使い分けの注意</h3>
               <p>{drug.note}</p>
             </div>
-            <a className={styles.source} href={drug.source} target="_blank" rel="noreferrer">製品資料：{drug.sourceLabel} ↗</a>
+            <a className={styles.source} href={drug.source} target="_blank" rel="noreferrer">製品情報：{drug.sourceLabel} ↗</a>
           </section>
         ))}
       </div>

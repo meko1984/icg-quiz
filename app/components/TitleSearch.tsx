@@ -87,7 +87,7 @@ export default function TitleSearch() {
                   <div className="search-question-list">
                     {matchingQuestions.slice(0, 3).map((question) => (
                       <article key={question.id}>
-                        <small>第{question.lecture}回 · {question.category.replace('（講義資料外・出題指定）', '')}</small>
+                        <small>第{question.lecture}回 · {question.category}</small>
                         <p>{question.question}</p>
                       </article>
                     ))}

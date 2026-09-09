@@ -26,11 +26,11 @@ export default function InfectionChain() {
         <nav className={s.chain} aria-label="輪につながる感染成立の6要素。各要素の説明へ移動">{elements.map(([id, name, question], i) => <a key={id} href={`#${id}`}><b>{i + 1}. {name}</b><span>{question}</span></a>)}</nav>
         <p className={s.chainAction}><strong>つながりを断つ</strong><br />手指衛生・防護・清掃・免疫</p>
       </div>
-      <p className={s.note}>第1回講義資料4ページの6要素を再構成した模式図です。時間順のステップではなく、成立に関わる条件のつながりを表しています。</p>
+      <p className={s.note}>時間順のステップではなく、感染成立に関わる条件のつながりを表した模式図です。</p>
     </section>
     <section className={s.section}><h2>言葉を、具体的な対策につなげる</h2><div className={s.grid}>{elements.map(([id, name, question, text, example, action], i) => <article className={s.card} id={id} key={id}><span className={s.tag}>0{i + 1} · {question}</span><h3>{name}とは</h3><p>{text}</p><p className={s.note}>{example}</p><p><strong>対策との関係：</strong>{action}</p></article>)}</div></section>
     <section className={s.section}><h2>ベッド柵から手を介して伝わる例</h2><div className={s.flowStrip}><b>菌の付いたベッド柵</b><span aria-hidden="true">→</span><b>触れた手</b><span aria-hidden="true">→</span><b>患者の創部</b></div><p><strong>伝播経路：</strong>手指衛生と環境清掃で途中を断ちます。<strong>侵入門戸：</strong>創部の保護と無菌操作で入口を守ります。複数の要素に働きかけると、防御を重ねられます。</p></section>
-    <aside className={s.callout}><strong>ほかの資料の「感染の連鎖」との違い</strong><p>病原体・感染源・排出門戸・伝播経路・侵入門戸・感受性宿主という6項目で示す資料もあります。このページと第1回クイズは、講義で扱う「病原性」「病原体の量」を含む分類に合わせています。項目を混ぜて覚えないようにします。</p></aside>
-    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。第1回講義資料「感染成立に必要な6つの要素」4ページ、クイズ1〜8問。感染対策の補足：<a href="https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html">CDC：標準予防策</a>。</p></section>
+    <aside className={s.callout}><strong>「感染の連鎖」との違い</strong><p>感染の連鎖は、病原体・感染源・排出門戸・伝播経路・侵入門戸・感受性宿主という6項目で示されます。本章は「病原性」「病原体の量」を含む、感染成立に関わる6要素を扱います。2つの分類で項目が異なることに注意します。</p></aside>
+    <section className={s.sources}><h2>出典・確認日</h2><p>2026年9月9日確認。感染対策の補足：<a href="https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html">CDC：標準予防策</a>。</p></section>
   </div></StudyPage>;
 }

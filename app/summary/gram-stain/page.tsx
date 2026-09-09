@@ -203,7 +203,7 @@ export default function GramStain() {
         <a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noreferrer">CDC：淋菌の形態と検体による解釈</a>
         <a href="https://www.cdc.gov/meningococcal/hcp/clinical/index.html" target="_blank" rel="noreferrer">CDC：髄膜炎菌と侵襲性感染症</a>
         <a href="https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-8-haemophilus-influenzae.html" target="_blank" rel="noreferrer">CDC：インフルエンザ菌の形態</a>
-        <p>ミレリ菌群・紡錘菌の臨床例は第2回講義とクイズ131問に対応。学名・語源は<Link href="/summary/bacteria-names/">菌名一覧の個別出典</Link>を参照。追加内容は2026年9月9日確認。</p>
+        <p>ミレリ菌群・紡錘菌の学名・語源は<Link href="/summary/bacteria-names/">菌名一覧の個別出典</Link>を参照。追加内容は2026年9月9日確認。</p>
         <a href="https://amr.ncgm.go.jp/pdf/20231116_02.pdf" target="_blank" rel="noreferrer">厚生労働省／AMR臨床リファレンスセンター「抗微生物薬適正使用の手引き 第三版 別冊」</a>
         <a href="https://www.niid.go.jp/niid/images/lab-manual/ResistantBacteria20200604.pdf" target="_blank" rel="noreferrer">国立感染症研究所「病原体検出マニュアル 薬剤耐性菌」</a>
         <a href="https://www.cdc.gov/staphylococcus-aureus/about/index.html" target="_blank" rel="noreferrer">CDC「Staphylococcus aureus Basics」</a>
