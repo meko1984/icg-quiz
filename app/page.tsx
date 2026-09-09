@@ -17,14 +17,14 @@ export default function Home() {
         </header>
         <TitleSearch />
         <nav className="menu-list" aria-label="メインメニュー">
-          <Link className="menu-link menu-summary" href="/summary/">
+          <Link className="menu-link menu-quiz" href="/quiz/">
             <span className="menu-symbol" aria-hidden="true">01</span>
-            <span className="menu-copy"><strong>サクッとまとめ</strong><small>章ごとに、重要なポイントを確認できます</small></span>
+            <span className="menu-copy"><strong>解いて確認</strong><small>4択クイズに挑戦し、間違えた問題を復習できます</small></span>
             <span className="menu-arrow" aria-hidden="true">→</span>
           </Link>
-          <Link className="menu-link menu-quiz" href="/quiz/">
+          <Link className="menu-link menu-summary" href="/summary/">
             <span className="menu-symbol" aria-hidden="true">02</span>
-            <span className="menu-copy"><strong>解いて確認</strong><small>4択クイズに挑戦し、間違えた問題を復習できます</small></span>
+            <span className="menu-copy"><strong>サクッとまとめ</strong><small>章ごとに、重要なポイントを確認できます</small></span>
             <span className="menu-arrow" aria-hidden="true">→</span>
           </Link>
           <Link className="menu-link menu-message" href="/developer/">

@@ -59,3 +59,12 @@
   .actions span { margin: 0; }
   .page h3 { font-size: 19px; }
 }
+.normalDiagram { display: block; width: min(100%, 460px); height: auto; margin: 24px auto; }
+.actionTargets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.actionTargets > div { padding: 14px; border: 1px solid #bdd4cc; border-radius: 10px; background: #f0f7f4; }
+.actionTargets b, .actionTargets span { display: block; }
+.actionTargets span { margin-top: 6px; font-size: 14px; line-height: 1.7; }
+.usualAction { padding: 12px; margin-top: 18px; border-radius: 9px; background: #edf7f0; color: #315c45; }
+.usualAction p { margin: 6px 0 0; font-size: 14px; line-height: 1.7; }
+.resistantCaption { display: block; margin-top: 14px; font-size: 14px; color: #9a3e48; }
+@media (max-width: 380px) { .actionTargets { grid-template-columns: 1fr; } }

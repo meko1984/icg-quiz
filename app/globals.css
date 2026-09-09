@@ -44,7 +44,7 @@ button { font: inherit; }
 }
 
 .home-card { padding: clamp(26px, 7vw, 48px); }
-.quiz-card { padding: clamp(22px, 6vw, 42px); }
+.quiz-card { padding: clamp(18px, 4vw, 32px); min-width: 0; }
 .history-card { width: min(100%, 620px); padding: clamp(24px, 6vw, 44px); }
 
 .brand-mark {
@@ -324,7 +324,8 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 .search-empty p { margin: 7px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .chapter-card h1, .study-card h1 { font-size: clamp(28px, 6.8vw, 42px); line-height: 1.3; }
 .study-shell { align-items: start; }
-.study-card { width: min(100%, 760px); }
+.study-shell { grid-template-columns: minmax(0, 1fr); }
+.study-card { width: min(100%, 760px); min-width: 0; }
 .study-nav { display: flex; justify-content: space-between; gap: 15px; font-size: 14px; }
 .topic-label { display: inline-block; margin: 18px 0 0; padding: 7px 11px; border-radius: 8px; background: #eef3f1; font-size: 12px; color: #536b70; }
 .moment-groups { display: grid; gap: 16px; margin-top: 26px; }
@@ -486,7 +487,7 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 .gram-column-labels { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 20px; }
 .gram-column-labels span { padding: 9px 12px; border-radius: 10px; color: white; background: #6330a3; text-align: center; font-size: 12px; font-weight: 850; }
 .gram-column-labels span:last-child { background: #ce276f; }
-.gram-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 10px; }
+.gram-matrix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; margin-top: 10px; }
 .gram-group { align-self: start; overflow: hidden; border: 1px solid; border-radius: 18px; background: white; }
 .gram-purple { border-color: #d9c8e6; }
 .gram-pink { border-color: #edc5d7; }
@@ -500,14 +501,14 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 .gram-form > span { color: #6330a3; font-size: 22px; line-height: 1; }
 .gram-pink .gram-form > span { color: #c92470; }
 .bacteria-list { display: grid; }
-.bacteria-item { min-height: 87px; display: grid; grid-template-columns: 82px 1fr; align-items: center; gap: 5px; padding: 12px 13px; }
+.bacteria-item { min-height: 87px; display: grid; grid-template-columns: 62px minmax(0, 1fr); align-items: center; gap: 9px; padding: 14px 13px; }
 .bacteria-item + .bacteria-item { border-top: 1px solid #eee7f1; }
 .gram-pink .bacteria-item + .bacteria-item { border-color: #f5e4ec; }
-.bacteria-mark { width: 76px; height: 43px; }
+.bacteria-mark { width: 62px; height: 43px; }
 .bacteria-item > div { min-width: 0; display: grid; gap: 2px; }
-.bacteria-item strong { font-size: 13px; line-height: 1.45; }
-.bacteria-item i { color: #776b7c; font-family: Georgia, serif; font-size: 10px; overflow-wrap: anywhere; }
-.bacteria-item small { margin-top: 3px; color: #665a6d; font-size: 10px; font-weight: 750; line-height: 1.45; }
+.bacteria-item strong { font-size: 16px; line-height: 1.5; }
+.bacteria-item i { color: #776b7c; font-family: Georgia, serif; font-size: 14px; overflow-wrap: anywhere; }
+.bacteria-item small { margin-top: 3px; color: #665a6d; font-size: 14px; font-weight: 500; line-height: 1.7; }
 .gram-takeaway strong { color: #6330a3; }
 .resistance-section { margin-top: 34px; }
 .resistance-key { display: grid; grid-template-columns: 42px 1fr; align-items: center; gap: 11px; margin: 18px 0 13px; padding: 13px 15px; border: 1px solid #d9cfe4; border-radius: 14px; background: #f7f4fa; }
@@ -517,8 +518,8 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 .resistance-key small { color: #706276; font-size: 11px; }
 .resistance-labels { display: grid; gap: 8px; padding: 11px; }
 .resistance-label { display: grid; grid-template-columns: minmax(70px, auto) 1fr; align-items: center; gap: 9px; }
-.resistance-label b { padding: 6px 8px; border-radius: 8px; color: white; background: #ba315d; text-align: center; font-size: 11px; line-height: 1.3; }
-.resistance-label span { color: #594d5e; font-size: 10px; font-weight: 700; line-height: 1.45; }
+.resistance-label b { padding: 6px 8px; border-radius: 8px; color: white; background: #ba315d; text-align: center; font-size: 13px; line-height: 1.3; }
+.resistance-label span { color: #594d5e; font-size: 13px; font-weight: 700; line-height: 1.6; }
 .resistance-susceptible b { background: #258272; }
 .bacteria-resistance { margin-top: 7px; padding: 8px 0 0; border-top: 1px dashed #ded3e3; }
 .resistance-note { margin: 11px 3px 0; color: #706276; font-size: 10px; line-height: 1.7 !important; }
@@ -528,6 +529,10 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 .developer-message { margin-top: 20px; padding: 23px; border-radius: 17px; background: #f7f5fb; }
 .developer-message h2 small { display: block; margin-top: 6px; font-size: 11px; font-weight: 500; color: var(--muted); }
 .feature-list { padding-left: 22px; font-size: 14px; line-height: 2; }
+@media (max-width: 650px) {
+  .gram-column-labels { display: none; }
+  .gram-matrix { grid-template-columns: 1fr; margin-top: 16px; }
+}
 @media (max-width: 560px) {
   .return-to-quiz { align-items: stretch; flex-direction: column; gap: 10px; }
   .return-to-quiz button { width: 100%; }
@@ -551,7 +556,8 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
   .gram-column-labels { display: none; }
   .gram-matrix { grid-template-columns: 1fr; margin-top: 16px; }
   .gram-group > header { min-height: 70px; }
-  .bacteria-item { grid-template-columns: 76px 1fr; }
+  .bacteria-item { grid-template-columns: 54px minmax(0, 1fr); }
+  .bacteria-mark { width: 54px; }
   .resistance-key { grid-template-columns: 38px 1fr; padding: 12px; }
   .resistance-key > span { width: 38px; height: 38px; }
   .name-route { grid-template-columns: 1fr; }
@@ -607,3 +613,28 @@ a.back-button { display: inline-flex; align-items: center; text-decoration: none
 
 .round-status p { margin: 6px 0 10px; }
 .round-status small { display: block; margin-top: 10px; }
+
+/* Answer feedback keeps the next action within the viewport. */
+.quiz-view { place-items: start center; }
+.quiz-view .progress-track { margin: 10px 0 16px; }
+.quiz-view .question-text { margin: 0; font-size: clamp(21px, 5vw, 28px); line-height: 1.5; overflow-wrap: anywhere; }
+.quiz-view .answer-list { margin-top: 20px; gap: 9px; }
+.quiz-answered { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }
+.quiz-next-dock { position: fixed; z-index: 20; left: 50%; bottom: 0; transform: translateX(-50%); width: min(100%, 620px); display: flex; align-items: center; gap: 14px; padding: 12px 18px max(12px, env(safe-area-inset-bottom)); background: #fff; border: 1px solid var(--line); border-radius: 18px 18px 0 0; box-shadow: 0 -6px 24px #15333a18; }
+.quiz-next-dock .next-button { flex: 1; width: auto; min-width: 0; min-height: 50px; margin: 0; font-size: 16px; }
+.dock-count { flex: 0 0 auto; font-size: 15px; font-weight: 800; }
+.quiz-explanation { margin-top: 22px; line-height: 1.85; overflow-wrap: anywhere; }
+.quiz-explanation h2 { margin: 0 0 6px; font-size: 18px; }
+.quiz-explanation p { margin: 0; font-size: 16px; white-space: pre-line; }
+.answer-review { margin: 18px 0; border-block: 1px solid var(--line); font-size: 14px; }
+.answer-review summary { padding: 14px 0; cursor: pointer; font-weight: 700; }
+.answer-review ol { margin: 0 0 16px; padding-left: 24px; list-style-type: upper-alpha; }
+.answer-review li { padding: 5px 0; line-height: 1.6; }
+.quiz-secondary { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.quiz-secondary p { margin: 5px 0; }
+.quiz-answered :is(a, button, summary) { scroll-margin-bottom: 130px; }
+@media (max-width: 480px) { .quiz-view { padding-inline: 10px; padding-top: 12px; } .quiz-meta span:last-child { margin-left: auto; } }
+.chapter-group { margin-top: 30px; }
+.chapter-group h2 { margin: 0 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 20px; }
+.chapter-group .menu-list { margin-top: 0; }
+.study-note { font-size: 14px; line-height: 1.8; }

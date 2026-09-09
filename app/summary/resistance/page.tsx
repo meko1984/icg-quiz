@@ -14,6 +14,25 @@ const mechanisms = [
   { id: 'concentration', number: '04', verb: '薬を入れない・外へ出す', name: '菌体内濃度の低下', explanation: '薬の侵入を減らす、または入った薬を排出して、菌体内の薬剤濃度を下げます。', example: '緑膿菌、一部のCREなど', detail: '透過性低下：ポーリン（入口）の減少・欠損。排出：多剤排出ポンプの活性化。緑膿菌のOprDやMex系が代表例で、酵素産生と重なる場合もあります。', approach: '入口の変化・排出だけで全薬剤が無効とは限りません。薬剤ごとの感受性を確認します。', target: 'concentration' },
 ] as const;
 
+const ordinaryActions = {
+  enzyme: 'βラクタム系薬が壊されずに細胞壁の合成酵素へ届き、壁づくりを妨げます。',
+  target: '抗菌薬が対応する標的に結合し、その標的の働きを妨げます。',
+  protect: '抗菌薬がリボソームなどへ結合し、タンパク質合成などを妨げます。',
+  concentration: '標的に作用するために必要な量の薬が、必要な場所まで届きます。',
+};
+
+function NormalActionDiagram() {
+  return <svg viewBox="0 0 340 190" className={styles.normalDiagram} role="img" aria-label="通常は抗菌薬が届き、標的に結合し、細菌の必須機能を妨げる。耐性ではこの流れの途中が妨げられる。">
+    <defs><marker id="normal-action-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="#1268ad" /></marker></defs>
+    <rect x="116" y="22" width="214" height="115" rx="28" fill="#eff7f3" stroke="#668b80" strokeWidth="3" />
+    <text x="230" y="48" textAnchor="middle" fill="#315b4e" fontSize="16">細菌の標的</text>
+    <text x="42" y="48" textAnchor="middle" fill="#1268ad" fontSize="16">抗菌薬</text>
+    <circle cx="42" cy="86" r="13" fill="#1268ad" /><path d="M62 86H180" stroke="#1268ad" strokeWidth="3" markerEnd="url(#normal-action-arrow)" />
+    <path d="M232 65H285V110H232V100A14 14 0 0 0 232 72Z" fill="#cce5da" stroke="#477561" strokeWidth="2" /><circle cx="220" cy="86" r="13" fill="#1268ad" />
+    <text x="42" y="166" textAnchor="middle" fill="#15333a" fontSize="16">① 届く</text><text x="170" y="166" textAnchor="middle" fill="#15333a" fontSize="16">② 結合する</text><text x="285" y="166" textAnchor="middle" fill="#15333a" fontSize="16">③ 妨げる</text>
+  </svg>;
+}
+
 function MechanismDiagram({ kind, label }: { kind: string; label: string }) {
   return <svg viewBox="0 0 300 150" role="img" aria-label={label} className={styles.diagram}>
     <defs><marker id={`arrow-${kind}`} markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="currentColor" /></marker></defs>
@@ -54,12 +73,22 @@ export default function Resistance() {
   return <StudyPage title="抗菌薬耐性の4つのメカニズム">
     <div className={styles.page}>
       <p className={styles.lead}><strong>不活化・作用点の変化・作用点の修飾・保護・濃度低下</strong>。<br />「効かない理由」から、菌・対策・治療をつなげます。</p>
-      <nav className={styles.jump} aria-label="このページの目次"><a href="#mechanisms">4つの仕組み</a><a href="#response">検出時の対策</a><a href="#treatment">菌別の治療例</a></nav>
+      <nav className={styles.jump} aria-label="このページの目次"><a href="#action">抗菌作用とは</a><a href="#mechanisms">4つの仕組み</a><a href="#response">検出時の対策</a><a href="#treatment">菌別の治療例</a></nav>
+      <section id="action" className={styles.section}>
+        <h2>抗菌作用とは</h2>
+        <p>抗菌薬が細菌の重要な働きを妨げ、<strong>増殖を抑えたり、菌を死滅させたりする作用</strong>です。抗菌薬ごとに狙う場所が異なります。</p>
+        <NormalActionDiagram />
+        <div className={styles.actionTargets}><div><b>細胞壁</b><span>壁づくりを妨げる<br />βラクタム系など</span></div><div><b>リボソーム</b><span>タンパク質づくりを妨げる<br />マクロライド系など</span></div><div><b>核酸</b><span>遺伝情報の複製などを妨げる<br />キノロン系など</span></div><div><b>細胞膜</b><span>膜の働きを乱す<br />ダプトマイシンなど</span></div></div>
+        <p className={styles.note}>図は「届く・結合する・妨げる」の関係を示します。標的は細胞表層にも内部にもあり、すべての薬が細胞内へ入るわけではありません。<Link href="/summary/antibiotics/">抗菌薬の作用点の詳しい図 →</Link></p>
+        <aside className={styles.takeaway}><h3>耐性は、薬が効く流れを妨げる仕組み</h3><p>薬を壊す、標的を変える、標的を守る、必要な量を届かなくする。耐性菌が抗菌作用を持つのではなく、<strong>細菌が抗菌薬の作用を受けにくくなります。</strong>次の4つの図で、通常の働きと比べます。<a href="#source-1">[1]</a></p></aside>
+      </section>
       <section id="mechanisms" className={styles.section}>
         <h2>講義の4分類を、図でつかむ</h2>
         <p className={styles.note}>第2回講義資料の分類に合わせています。「入れない・外へ出す」は、どちらも④菌体内濃度の低下です。1つの菌が複数の仕組みを持つことがあり、同じ菌種でも菌株ごとに異なります。図は働きの模式図で、正確な構造や縮尺を示すものではありません。<a href="#source-1">[1]</a></p>
         <div className={styles.grid}>{mechanisms.map(m => <article key={m.id} className={styles.mechanism} id={m.id}>
           <header><span className={styles.number}>{m.number}</span><div><h3>{m.name}</h3><span className={styles.name}>{m.verb}</span></div></header>
+          <div className={styles.usualAction}><b>薬が効く場合</b><p>{ordinaryActions[m.target]}</p></div>
+          <strong className={styles.resistantCaption}>↓ この耐性機序がある場合</strong>
           <MechanismDiagram kind={m.target} label={`${m.verb}：${m.explanation}`} />
           <p>{m.explanation}</p>
           <div className={styles.example}><small>代表菌・耐性菌</small><strong>{m.example}</strong></div>
@@ -108,7 +137,7 @@ export default function Resistance() {
       <nav className={styles.related} aria-label="関連するまとめ"><Link href="/summary/antibiotics/">抗菌薬の作用点を確認 →</Link><Link href="/summary/drug-abbreviations/">薬の略称・製品名を見る →</Link><Link href="/summary/5moments/">手指衛生のタイミング →</Link></nav>
       <section className={styles.sources} aria-label="参考資料">
         <h2>参考資料・このページの範囲</h2>
-        <p>学習用の代表例です。個々の患者への処方や感染対策の指示を代替するものではありません。資料確認日：2026年9月7日。</p>
+        <p>学習用の代表例です。個々の患者への処方や感染対策の指示を代替するものではありません。抗菌作用の図解追加：2026年9月9日。既存の治療表の資料確認日：2026年9月7日。</p>
         <p>分類・用語：第2回感染制御認定士講座「微生物学」配布資料の「抗菌薬耐性の4つのメカニズム」とメカニズム①〜④。菌の例・治療は以下の資料で補足しています。</p><ol>
           <li id="source-1"><a href="https://www.cdc.gov/antimicrobial-resistance/about/index.html">CDC：About Antimicrobial Resistance</a> — 耐性の仕組み</li>
           <li id="source-2"><a href="https://www.idsociety.org/practice-guideline/amr-guidance/">IDSA：2026 AMR Guidance</a> — ESBL・CRE・耐性緑膿菌の機序と治療</li>

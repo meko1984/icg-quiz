@@ -986,7 +986,7 @@
       "汚染部位の局所消毒を不要にできる",
       "広範囲の消毒薬使用による蒸気や引火を防げる"
     ],
-    "explanation": "洗浄剤の使い方が不適切だと、細菌を周囲へ広げるおそれがある。清掃用具の管理を含め、施設の手順に従う。",
+    "explanation": "洗浄だけでは微生物を十分に不活化できないことがあります。汚れたクロスの同じ面で別の場所を拭いたり、汚染した洗浄液を使い続けたりすると、菌を別の場所へ広げる（播種する）おそれがあります。クロス・洗浄液の交換と、汚染状況に応じた消毒が必要です。",
     "sourceType": "lecture"
   },
   {
@@ -1369,7 +1369,7 @@
     "number": 92,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "免疫がない場合、HBVの針刺し時感染率はどの程度とされるか。",
+    "question": "第1回講義で示された数値として、免疫がない場合、HBVの針刺し時感染率はどの程度とされるか。",
     "correct": "30%以上",
     "distractors": [
       "約10%程度",
@@ -1414,7 +1414,7 @@
     "number": 95,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "HCV感染者の血液による針刺し時の感染率はどれか。",
+    "question": "第1回講義で示された数値として、HCV感染者の血液による針刺し時の感染率はどれか。",
     "correct": "約1.8%",
     "distractors": [
       "30%以上",
@@ -1451,7 +1451,7 @@
       "感染者の約10分の1が慢性肝炎となり、肝硬変・肝がんへ進展する",
       "感染者のほぼ全例が慢性肝炎となり、肝硬変・肝がんへ進展する"
     ],
-    "explanation": "慢性化と重篤化に注意する。",
+    "explanation": "講義では約3分の2の慢性化を学習値としています。慢性感染した人が全員、肝硬変・肝がんになるという意味ではありません。WHOは約70%（55〜85%）が慢性感染となるとし、進行は年齢、飲酒、併存疾患や治療などにより変わります。",
     "sourceType": "lecture"
   },
   {
@@ -1474,14 +1474,14 @@
     "number": 99,
     "lecture": 1,
     "category": "血液媒介病原体",
-    "question": "HIVの針刺し時感染率はどの程度とされるか。",
+    "question": "第1回講義で示された数値として、HIVの針刺し時感染率はどの程度とされるか。",
     "correct": "0.3%",
     "distractors": [
       "30%以上",
       "約10%程度",
       "約1%程度"
     ],
-    "explanation": "HIV陽性血液への針刺しなどの経皮曝露による感染リスクは、平均約0.3%とされる。曝露後は直ちに報告し、PEPの適応を評価する。",
+    "explanation": "講義の学習値は約0.3%です。米国2025年職業曝露ガイドラインは、HIV感染血液への経皮曝露の平均リスクを0.23%と示しています。いずれも曝露条件で変わる集団の推定値で、予防内服後の感染率ではありません。曝露後は直ちに報告し、PEP（post-exposure prophylaxis：曝露後予防）の適応を評価します。",
     "sourceType": "lecture"
   },
   {
@@ -1541,7 +1541,7 @@
       "洗浄せず自己判断で放置する",
       "消毒薬だけを使用する"
     ],
-    "explanation": "直ちに十分な洗浄を行う。",
+    "explanation": "皮膚や針刺し部位は流水と石けんで洗います。眼は水または生理食塩液、口や鼻などの粘膜は水で十分に洗い流します。粘膜へ石けん・消毒薬を使うという意味ではありません。",
     "sourceType": "lecture"
   },
   {
@@ -1706,7 +1706,7 @@
       "培養結果を待たず病原体名を確定する",
       "消毒薬で検体を処理してから提出する"
     ],
-    "explanation": "適切な検体採取が、その後のグラム染色、培養、感受性試験の土台となる。",
+    "explanation": "適切な検体採取が、その後のグラム染色、培養、感受性試験の土台となる。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -1721,7 +1721,7 @@
       "S/I/R判定に基づいて抗菌薬を最適化する",
       "感染部位から質の高い検体を採取する"
     ],
-    "explanation": "グラム染色は迅速な初期情報を与えるが、最終同定や感受性判定そのものではない。",
+    "explanation": "グラム染色は迅速な初期情報を与えるが、最終同定や感受性判定そのものではない。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -1736,7 +1736,7 @@
       "S/I/R判定に基づいて抗菌薬を最適化する",
       "感染部位から質の高い検体を採取する"
     ],
-    "explanation": "培養・同定によって原因菌の正体を明らかにする。",
+    "explanation": "培養・同定によって原因菌の正体を明らかにする。\n\n【用語】S＝Susceptible（感性）、I＝Intermediate（中間：講義の表記）、R＝Resistant（耐性）。Iの定義は採用基準で異なり、EUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）ではSusceptible, increased exposure（曝露量を増やせば感性）です。",
     "sourceType": "lecture"
   },
   {
@@ -1751,7 +1751,7 @@
       "原因微生物の菌種を確定する",
       "感染部位から質の高い検体を採取する"
     ],
-    "explanation": "S/I/Rなどの結果を用いて標的治療やde-escalationへつなげる。",
+    "explanation": "薬剤感受性結果を、菌種・感染部位・患者の状態と合わせて治療へ反映します。de-escalation（デエスカレーション）は、原因菌と感受性が分かったら抗菌薬の範囲を必要なものへ絞るなど、治療を見直すことです。",
     "sourceType": "lecture"
   },
   {
@@ -1766,7 +1766,7 @@
       "GPR",
       "GNR"
     ],
-    "explanation": "GPCはGram-positive cocci、グラム陽性球菌を表す。",
+    "explanation": "GPCはGram-positive cocci、グラム陽性球菌を表す。\n\n【用語】GNC＝Gram-negative cocci（グラム陰性球菌）。\nGPR＝Gram-positive rods（グラム陽性桿菌）。\nGNR＝Gram-negative rods（グラム陰性桿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -1781,7 +1781,7 @@
       "GPR",
       "GNR"
     ],
-    "explanation": "GNCはGram-negative cocci、グラム陰性球菌を表す。",
+    "explanation": "GNCはGram-negative cocci、グラム陰性球菌を表す。\n\n【用語】GPC＝Gram-positive cocci（グラム陽性球菌）。\nGPR＝Gram-positive rods（グラム陽性桿菌）。\nGNR＝Gram-negative rods（グラム陰性桿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -1796,7 +1796,7 @@
       "GNC",
       "GNR"
     ],
-    "explanation": "GPRはGram-positive rods、グラム陽性桿菌を表す。",
+    "explanation": "GPRはGram-positive rods、グラム陽性桿菌を表す。\n\n【用語】GPC＝Gram-positive cocci（グラム陽性球菌）。\nGNC＝Gram-negative cocci（グラム陰性球菌）。\nGNR＝Gram-negative rods（グラム陰性桿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -1811,7 +1811,7 @@
       "GNC",
       "GPR"
     ],
-    "explanation": "GNRはGram-negative rods、グラム陰性桿菌を表す。",
+    "explanation": "GNRはGram-negative rods、グラム陰性桿菌を表す。\n\n【用語】GPC＝Gram-positive cocci（グラム陽性球菌）。\nGNC＝Gram-negative cocci（グラム陰性球菌）。\nGPR＝Gram-positive rods（グラム陽性桿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -1871,7 +1871,7 @@
       "房状のグラム陽性球菌",
       "らせん状のグラム陰性桿菌"
     ],
-    "explanation": "C. difficileはグラム陽性嫌気性桿菌で、芽胞形成が感染対策上重要となる。",
+    "explanation": "C. difficileはグラム陽性嫌気性桿菌で、芽胞形成が感染対策上重要となる。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -1931,7 +1931,7 @@
       "結核菌、麻疹ウイルス",
       "カンピロバクター、C. difficile"
     ],
-    "explanation": "尿路感染では腸内細菌目の大腸菌や肺炎桿菌などが重要となる。",
+    "explanation": "尿路感染では腸内細菌目の大腸菌や肺炎桿菌などが重要となる。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -1946,7 +1946,7 @@
       "腸球菌、C. difficileだけ",
       "HBV、HCV、HIV"
     ],
-    "explanation": "呼吸器検体では採取部位と患者背景から、想定する起因菌を考える。",
+    "explanation": "呼吸器検体では採取部位と患者背景から、想定する起因菌を考える。\n\n【用語】HBV＝hepatitis B virus（B型肝炎ウイルス）。\nHCV＝hepatitis C virus（C型肝炎ウイルス）。\nHIV＝human immunodeficiency virus（ヒト免疫不全ウイルス）。\nC. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -1991,7 +1991,7 @@
       "らせん状陰性桿菌／感染性腸炎",
       "太い有芽胞桿菌／胆嚢炎のみ"
     ],
-    "explanation": "黄色ブドウ球菌は房状のGPCで、化膿性病変の重要な原因菌である。",
+    "explanation": "黄色ブドウ球菌は房状のGPCで、化膿性病変の重要な原因菌である。\n\n【用語】GPC＝Gram-positive cocci（グラム陽性球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2021,7 +2021,7 @@
       "らせん状桿菌で、腸炎だけを起こす",
       "芽胞を形成する陰性桿菌である"
     ],
-    "explanation": "腸球菌は消化管由来の感染や医療関連感染で重要となる。",
+    "explanation": "腸球菌は消化管由来の感染や医療関連感染で重要となる。\n\n【用語】spp.はspecies（種）の複数を表す表記です。Enterococcus spp.は腸球菌属の複数の菌種を指します。",
     "sourceType": "lecture"
   },
   {
@@ -2036,7 +2036,7 @@
       "アルコール消毒による芽胞の増殖抑制",
       "空気感染による肺炎"
     ],
-    "explanation": "抗菌薬で腸内細菌叢が乱れるとC. difficileが増殖し、毒素による腸炎を起こし得る。",
+    "explanation": "抗菌薬で腸内細菌叢が乱れるとC. difficileが増殖し、毒素による腸炎を起こし得る。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -2051,7 +2051,7 @@
       "抗菌薬関連腸炎",
       "尿路感染症"
     ],
-    "explanation": "Moraxella catarrhalisは気道感染症の原因菌の一つである。",
+    "explanation": "Moraxella catarrhalisは気道感染症の原因菌の一つである。\n\n【用語】COPD＝chronic obstructive pulmonary disease（慢性閉塞性肺疾患）。",
     "sourceType": "lecture"
   },
   {
@@ -2096,7 +2096,7 @@
       "明瞭な芽胞を必ず形成する",
       "必ずらせん状に見える"
     ],
-    "explanation": "小さなグラム陰性桿菌のため、塗抹像を慎重に観察する。",
+    "explanation": "Haemophilus influenzae（インフルエンザ菌）は、非常に小さいグラム陰性の桿菌〜球桿菌です。「背景」とは、塗抹標本に一緒に見える粘液、細胞の破片、染色の沈殿などのことです。菌体が小さく淡く染まることがあり、それらに紛れて見落としやすい、という意味です。菌が物理的に背景へ沈むという意味ではありません。良質な検体と染色で複数の視野を丁寧に観察し、培養などと合わせて確認します。",
     "sourceType": "lecture"
   },
   {
@@ -2141,7 +2141,7 @@
       "喀痰中の膿性部分の割合",
       "培養ボトルの好気・嫌気の組み合わせ"
     ],
-    "explanation": "阻止円を基準と照合してS/I/Rなどを判定する。",
+    "explanation": "ディスクから広がった抗菌薬により、菌が発育しない範囲を阻止円と呼びます。その直径を、菌種・薬剤ごとの判定基準と照合します。",
     "sourceType": "lecture"
   },
   {
@@ -2156,7 +2156,7 @@
       "検査不能を示す",
       "感染ではなく保菌を示す"
     ],
-    "explanation": "Sは推奨される曝露条件で治療成功が期待できる判定である。",
+    "explanation": "SはSusceptible（感性）です。対象菌に対し、規定された標準の投与条件で治療効果が期待できる判定です。感染部位や患者の状態も確認します。",
     "sourceType": "lecture"
   },
   {
@@ -2171,7 +2171,7 @@
       "通常の投与条件では治療効果が期待しにくい",
       "阻止円を測定できず判定不能である"
     ],
-    "explanation": "Iの解釈は菌種・薬剤・採用基準で異なるため、検査室の報告基準に従う。",
+    "explanation": "Iは講義でIntermediate（中間）と表記しています。CLSI（Clinical and Laboratory Standards Institute：米国臨床検査標準協会）とEUCAST（European Committee on Antimicrobial Susceptibility Testing：欧州抗菌薬感受性試験法検討委員会）では定義が異なります。EUCASTのIはSusceptible, increased exposure（曝露量を増やせば感性）で、投与条件や感染部位で薬剤曝露を高めることが前提です。Iを一律に耐性扱いせず、検査室の採用基準に従います。",
     "sourceType": "lecture"
   },
   {
@@ -2186,7 +2186,7 @@
       "阻止円が最も大きい",
       "菌の病原性がないことを示す"
     ],
-    "explanation": "Rでは通常の投与スケジュールで十分な効果が得られにくい。",
+    "explanation": "RはResistant（耐性）です。その判定基準の投与条件では、治療効果が期待しにくいことを示します。",
     "sourceType": "lecture"
   },
   {
@@ -2336,7 +2336,7 @@
       "少量の膿性部分を含むM2",
       "膿性部分が1/3以下のP1"
     ],
-    "explanation": "膿性部分が多いほど下気道由来の情報を得やすく、原因菌検出率が高くなる。",
+    "explanation": "Miller & Jones（ミラー・ジョーンズ）分類は、喀痰の膿性部分を肉眼で評価する方法です。Mはmucoid（粘液性）、Pはpurulent（膿性）を表します。M1は粘液性、M2はごく少量の膿性部分、P1は膿性部分が1/3以下、P2は1/3を超え2/3未満、P3は2/3以上です。この設問の一般細菌培養ではP3を選びますが、重症度の分類ではなく、P3でも原因菌を必ず検出できるわけではありません。抗酸菌などは検査目的別に評価します。",
     "sourceType": "lecture"
   },
   {
@@ -2486,7 +2486,7 @@
       "アルコール分解酵素の産生",
       "莢膜の消失"
     ],
-    "explanation": "薬剤の標的が変化すると、抗菌薬が結合しにくくなる。",
+    "explanation": "薬剤の標的が変化すると、抗菌薬が結合しにくくなる。\n\n【用語】MRSA＝methicillin-resistant Staphylococcus aureus（メチシリン耐性黄色ブドウ球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2576,7 +2576,7 @@
       "多剤耐性緑膿菌",
       "カルバペネム耐性腸内細菌目細菌"
     ],
-    "explanation": "MRSAはグラム陽性球菌で、接触伝播対策が重要となる。",
+    "explanation": "MRSAはグラム陽性球菌で、接触伝播対策が重要となる。\n\n【用語】MRSA＝methicillin-resistant Staphylococcus aureus（メチシリン耐性黄色ブドウ球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2591,7 +2591,7 @@
       "芽胞を形成するためアルコールが全く無効",
       "空気感染だけで広がる"
     ],
-    "explanation": "ベッド柵やドアノブなど手が触れる表面の清掃・消毒が重要となる。",
+    "explanation": "乾燥環境とは、ベッド柵、ドアノブ、オーバーテーブルなど、目に見える水分のない表面のことです。MRSAはこのような表面にも生き残ることがあり、触れた手や器具を介して伝播します。「乾燥しているから菌はいない」「乾いた場所でよく増殖する」という意味ではありません。高頻度接触面の清掃・適切な消毒と手指衛生が重要です。\n\n【用語】MRSA＝methicillin-resistant Staphylococcus aureus（メチシリン耐性黄色ブドウ球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2606,7 +2606,7 @@
       "多剤耐性緑膿菌",
       "基質拡張型βラクタマーゼ産生菌"
     ],
-    "explanation": "VREは腸管に保菌され、便を介した接触伝播に注意する。",
+    "explanation": "VREは腸管に保菌され、便を介した接触伝播に注意する。\n\n【用語】VRE＝vancomycin-resistant enterococci（バンコマイシン耐性腸球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2621,7 +2621,7 @@
       "抗菌薬を環境表面へ散布する",
       "患者周辺環境の清掃を省略する"
     ],
-    "explanation": "患者・排泄物・汚染環境を介した接触伝播を断つ。",
+    "explanation": "患者・排泄物・汚染環境を介した接触伝播を断つ。\n\n【用語】VRE＝vancomycin-resistant enterococci（バンコマイシン耐性腸球菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2636,7 +2636,7 @@
       "バンコマイシン耐性腸球菌",
       "ペニシリン耐性肺炎球菌"
     ],
-    "explanation": "MDRPは湿潤・水回り環境とバイオフィルムが重要となる。",
+    "explanation": "MDRPは湿潤・水回り環境とバイオフィルムが重要となる。\n\n【用語】MDRP＝multidrug-resistant Pseudomonas aeruginosa（多剤耐性緑膿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2651,7 +2651,7 @@
       "抗ウイルス薬、抗結核薬、消毒薬",
       "セフェム系、ワクチン、免疫グロブリン"
     ],
-    "explanation": "MDRPは、カルバペネム系、アミノグリコシド系、フルオロキノロン系の3系統すべてへの耐性が判定上のポイントとなる。",
+    "explanation": "MDRPは、カルバペネム系、アミノグリコシド系、フルオロキノロン系の3系統すべてへの耐性が判定上のポイントとなる。\n\n【用語】MDRP＝multidrug-resistant Pseudomonas aeruginosa（多剤耐性緑膿菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2666,7 +2666,7 @@
       "作用点を全く持たないこと",
       "患者体内でだけプラスミドを失うこと"
     ],
-    "explanation": "ESBLは主に大腸菌や肺炎桿菌などで問題となる。",
+    "explanation": "ESBLは主に大腸菌や肺炎桿菌などで問題となる。\n\n【用語】ESBL＝extended-spectrum beta-lactamase（基質拡張型βラクタマーゼ）。",
     "sourceType": "lecture"
   },
   {
@@ -2681,7 +2681,7 @@
       "バンコマイシンだけに耐性の腸球菌",
       "芽胞を形成するグラム陽性嫌気性菌"
     ],
-    "explanation": "CREではカルバペネマーゼ産生や複数機序の組み合わせが問題となる。",
+    "explanation": "CREではカルバペネマーゼ産生や複数機序の組み合わせが問題となる。\n\n【用語】CRE＝carbapenem-resistant Enterobacterales（カルバペネム耐性腸内細菌目細菌）。",
     "sourceType": "lecture"
   },
   {
@@ -2696,7 +2696,7 @@
       "C. difficileだけ",
       "カンピロバクターだけ"
     ],
-    "explanation": "腸内細菌目細菌では耐性遺伝子の伝播にも注意する。",
+    "explanation": "腸内細菌目細菌では耐性遺伝子の伝播にも注意する。\n\n【用語】ESBL＝extended-spectrum beta-lactamase（基質拡張型βラクタマーゼ）。\nCRE＝carbapenem-resistant Enterobacterales（カルバペネム耐性腸内細菌目細菌）。\nC. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -2771,7 +2771,7 @@
       "C. difficileがウイルスだから",
       "芽胞がグラム陰性球菌だから"
     ],
-    "explanation": "アルコールは通常の栄養型細菌には有効でも、芽胞そのものの失活には不十分である。",
+    "explanation": "アルコールは通常の栄養型細菌には有効でも、芽胞そのものの失活には不十分である。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -2786,7 +2786,7 @@
       "手袋だけ交換し手指衛生を省略する",
       "水だけで数秒すすぐ"
     ],
-    "explanation": "芽胞を物理的に洗い流すことが重要となる。",
+    "explanation": "芽胞を物理的に洗い流すことが重要となる。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {
@@ -2801,7 +2801,7 @@
       "汚染リネンを病室へ放置する",
       "環境清掃を行わず空気清浄機だけを使う"
     ],
-    "explanation": "次亜塩素酸ナトリウムなど、芽胞への有効性が確認された製品を施設手順で使用する。",
+    "explanation": "次亜塩素酸ナトリウムなど、芽胞への有効性が確認された製品を施設手順で使用する。\n\n【用語】C. difficile＝Clostridioides difficile（クロストリディオイデス・ディフィシル）。",
     "sourceType": "lecture"
   },
   {

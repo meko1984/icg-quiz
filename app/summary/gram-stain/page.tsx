@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import StudyPage from '../../components/StudyPage';
 
 const title = 'グラム染色 × 菌の形 | サクッとまとめ';
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary', title, description, images: [] },
 };
 
-type Shape = 'cluster' | 'diplo' | 'chain' | 'spore' | 'rod' | 'thick-rod' | 'tiny-rod' | 'long-rod' | 'curve';
+type Shape = 'cluster' | 'diplo' | 'chain' | 'spore' | 'rod' | 'thick-rod' | 'tiny-rod' | 'long-rod' | 'curve' | 'spindle' | 'kidney';
 
 function BacteriaMark({ shape, negative = false }: { shape: Shape; negative?: boolean }) {
   const color = negative ? '#d72c79' : '#6330a3';
@@ -29,6 +30,8 @@ function BacteriaMark({ shape, negative = false }: { shape: Shape; negative?: bo
       {shape === 'tiny-rod' && <g fill="none" stroke={color} strokeWidth="4" strokeLinecap="round"><path d="M17 15l9 2M34 12l8 2M49 17l8 2M61 12l9 2M24 30l8 2M42 28l9 2M59 32l8 2" /></g>}
       {shape === 'long-rod' && <g fill="none" stroke={color} strokeWidth="6" strokeLinecap="round"><path d="M10 15l30 6M43 12l34 7M20 34l32-7M55 33l21-8" /></g>}
       {shape === 'curve' && <g fill="none" stroke={color} strokeWidth="6" strokeLinecap="round"><path d="M11 16q12 15 24 0M39 30q12-15 24 0M58 13q9 11 18 0" /></g>}
+      {shape === 'spindle' && <g fill={color}><path d="M8 12 Q34 6 51 26 Q26 25 8 12 M32 33 Q52 14 81 28 Q58 41 32 33" /></g>}
+      {shape === 'kidney' && <g fill={color}><path d="M39 9 C20 7 20 39 39 37 Q33 23 39 9 M47 9 C66 7 66 39 47 37 Q53 23 47 9" /></g>}
     </svg>
   );
 }
@@ -43,6 +46,7 @@ const groups = [
       { name: '黄色ブドウ球菌', scientific: 'Staphylococcus aureus', shape: 'cluster' as Shape, hint: 'ブドウの房状' },
       { name: '肺炎球菌', scientific: 'Streptococcus pneumoniae', shape: 'diplo' as Shape, hint: '双球菌' },
       { name: '腸球菌', scientific: 'Enterococcus spp.', shape: 'chain' as Shape, hint: '連鎖状' },
+      { name: 'ミレリ菌群', scientific: 'Streptococcus anginosus group', shape: 'chain' as Shape, hint: '連鎖状・口腔内常在菌。S. anginosus / S. constellatus / S. intermediusの3菌種で、膿瘍・膿胸に関係' },
     ],
   },
   {
@@ -52,6 +56,8 @@ const groups = [
     color: 'pink',
     examples: [
       { name: 'モラクセラ菌', scientific: 'Moraxella catarrhalis', shape: 'diplo' as Shape, hint: '双球菌・細胞内外' },
+      { name: '淋菌', scientific: 'Neisseria gonorrhoeae', shape: 'kidney' as Shape, hint: 'そら豆状の双球菌。尿道分泌物では好中球内にみられることがある' },
+      { name: '髄膜炎菌', scientific: 'Neisseria meningitidis', shape: 'kidney' as Shape, hint: '双球菌。髄膜炎・菌血症など。形だけでは淋菌と区別できない' },
     ],
   },
   {
@@ -69,11 +75,12 @@ const groups = [
     form: '桿菌',
     color: 'pink',
     examples: [
-      { name: '大腸菌', scientific: 'Escherichia coli', shape: 'rod' as Shape, hint: '中くらいの桿菌' },
-      { name: '肺炎桿菌', scientific: 'Klebsiella pneumoniae', shape: 'thick-rod' as Shape, hint: '太く丸みがある' },
-      { name: 'インフルエンザ菌', scientific: 'Haemophilus influenzae', shape: 'tiny-rod' as Shape, hint: '非常に小さい' },
+      { name: '大腸菌', scientific: 'Escherichia coli', shape: 'rod' as Shape, hint: '中くらいの桿菌。尿路感染・胆道感染など' },
+      { name: '肺炎桿菌', scientific: 'Klebsiella pneumoniae', shape: 'thick-rod' as Shape, hint: '太く丸みがあり、莢膜を持つ。肺炎・尿路感染など' },
+      { name: 'インフルエンザ菌', scientific: 'Haemophilus influenzae', shape: 'tiny-rod' as Shape, hint: '非常に小さな球桿菌。淡く染まることがあり、粘液・細胞の破片と紛れて見落としやすい' },
       { name: '緑膿菌', scientific: 'Pseudomonas aeruginosa', shape: 'long-rod' as Shape, hint: '細長い桿菌' },
-      { name: 'カンピロバクター', scientific: 'Campylobacter jejuni', shape: 'curve' as Shape, hint: 'カモメの翼状' },
+      { name: 'カンピロバクター', scientific: 'Campylobacter jejuni', shape: 'curve' as Shape, hint: '湾曲・S字・カモメの翼状。感染性腸炎など' },
+      { name: '紡錘菌', scientific: 'Fusobacterium spp.', shape: 'spindle' as Shape, hint: '代表的には両端が細い紡錘形。嫌気性菌で、口腔由来の膿胸などに関係' },
     ],
   },
 ] as const;
@@ -135,6 +142,7 @@ export default function GramStain() {
   return (
     <StudyPage title="グラム染色 × 菌の形">
       <p className="lead">まず<strong>色</strong>、次に<strong>形</strong>を確認します。<br />2つを組み合わせると、代表菌が見分けやすくなります。</p>
+      <p className="study-note">GPC＝Gram-positive cocci（グラム陽性球菌）、GNC＝Gram-negative cocci（グラム陰性球菌）、GPR＝Gram-positive rods（グラム陽性桿菌）、GNR＝Gram-negative rods（グラム陰性桿菌）。図は模式図で、色・形だけで菌種や薬剤感受性は確定できません。<Link href="/summary/bacteria-names/">日本語名・学名・由来・感染症の一覧 →</Link></p>
 
       <section className="gram-route" aria-labelledby="gram-route-title">
         <h2 id="gram-route-title">見る順番は、たった2つ</h2>
@@ -192,6 +200,10 @@ export default function GramStain() {
 
       <footer className="study-sources public-sources">
         <h2>公的機関の出典</h2>
+        <a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noreferrer">CDC：淋菌の形態と検体による解釈</a>
+        <a href="https://www.cdc.gov/meningococcal/hcp/clinical/index.html" target="_blank" rel="noreferrer">CDC：髄膜炎菌と侵襲性感染症</a>
+        <a href="https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-8-haemophilus-influenzae.html" target="_blank" rel="noreferrer">CDC：インフルエンザ菌の形態</a>
+        <p>ミレリ菌群・紡錘菌の臨床例は第2回講義とクイズ131問に対応。学名・語源は<Link href="/summary/bacteria-names/">菌名一覧の個別出典</Link>を参照。追加内容は2026年9月9日確認。</p>
         <a href="https://amr.ncgm.go.jp/pdf/20231116_02.pdf" target="_blank" rel="noreferrer">厚生労働省／AMR臨床リファレンスセンター「抗微生物薬適正使用の手引き 第三版 別冊」</a>
         <a href="https://www.niid.go.jp/niid/images/lab-manual/ResistantBacteria20200604.pdf" target="_blank" rel="noreferrer">国立感染症研究所「病原体検出マニュアル 薬剤耐性菌」</a>
         <a href="https://www.cdc.gov/staphylococcus-aureus/about/index.html" target="_blank" rel="noreferrer">CDC「Staphylococcus aureus Basics」</a>

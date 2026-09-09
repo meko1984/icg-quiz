@@ -9,6 +9,13 @@ export type RelatedStudy = {
 export function getRelatedStudy(question: SourceQuestion): RelatedStudy | null {
   const { number } = question;
 
+  if (number <= 8) return { href: '/summary/infection-chain/', title: '感染成立の6要素を図で確認する', note: '病原体・病原性・量・伝播経路・侵入門戸・感受性のある宿主をつなげて考えます。' };
+  if (number >= 60 && number <= 66) return { href: '/summary/cleaning/#spread', title: '洗浄剤の注意点と、菌を広げない清掃', note: '汚れたクロスや洗浄液を使い続けると、別の場所へ菌を運ぶことがあります。' };
+  if (number >= 91 && number <= 100) return { href: '/summary/hepatitis-hiv/', title: '肝炎・HIVの経路とリスクを比較する', note: '感染率と発症率を分け、講義の数値と報告値の条件を確認します。' };
+  if (number >= 101 && number <= 109) return { href: '/summary/exposure/', title: '曝露後の対応ステップを図で確認する', note: '洗浄 → 迅速な報告 → 血液検査。必要な予防の評価は検査と並行して進めます。' };
+  if (number === 156 || number === 157) return { href: '/summary/miller-jones/', title: 'Miller & Jones分類を図で確認する', note: 'M1〜P3は喀痰の肉眼的な性状の分類です。膿性部分の割合を見ます。' };
+  if (number === 140 || number === 131) return { href: '/summary/bacteria-names/', title: '菌名・形態・感染症のつながりを見る', note: '学名の意味と、菌の見え方・代表的な感染症を合わせて整理します。' };
+
   if (number >= 30 && number <= 38) {
     return {
       href: '/summary/5moments/',
@@ -53,8 +60,8 @@ export function getRelatedStudy(question: SourceQuestion): RelatedStudy | null {
 
   if (number >= 164 && number <= 171) {
     return {
-      href: '/summary/antibiotics/',
-      title: '抗菌薬の作用点を確認する',
+      href: '/summary/resistance/',
+      title: '抗菌作用と耐性の仕組みを図で確認する',
       note: '細菌は薬を分解する、標的を変える、薬を入れない・外へ出すなどの方法で抗菌薬に耐性を示す。',
     };
   }

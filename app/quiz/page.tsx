@@ -223,6 +223,7 @@ export default function Home() {
     if (answered || !current) return;
     const correct = answer === current.correct;
     setSelected(answer);
+    window.scrollTo({ top: 0, behavior: 'instant' });
     if (correct) setScore((value) => value + 1);
     if (!correct) setWrongThisSession((ids) => [...ids, current.id]);
     setHistory((previous) => {
@@ -354,31 +355,21 @@ export default function Home() {
     const relatedStudy = getRelatedStudy(current);
     const relatedStudyHref = relatedStudy ? withQuizReturn(relatedStudy.href) : null;
     return (
-      <main className="app-shell quiz-view">
+      <main className={`app-shell quiz-view ${answered ? 'quiz-answered' : ''}`}>
         <section className="quiz-card" aria-live="polite">
           <div className="quiz-meta">
             <span>第{current.lecture}回</span>
-            <span>{current.category.replace('（講義資料外・出題指定）', '')}</span>
-            <span>{index + 1} / {session.length}</span>
+            <span>{index + 1} / {session.length}問</span>
           </div>
           <div className="progress-track" aria-label={`進捗 ${Math.round(progress)}%`}>
             <span style={{ width: `${progress}%` }} />
           </div>
-          {activeProgress && <p className="round-status">{sessionScope}・{sessionRound}周目：{activeProgress.answeredIds.length} / {activeProgress.total}問 回答済み</p>}
-          {storageError && <p role="alert">学習記録を保存できません。ブラウザの保存設定や空き容量を確認してください。</p>}
-          {current.sourceType === 'exam-extra' && <div className="extra-badge">講義資料外・試験範囲指定</div>}
-          <p className="eyebrow">QUESTION {String(index + 1).padStart(2, '0')}</p>
           <h1 className="question-text">{current.question}</h1>
 
-          <div className="answer-list">
-            {current.choices.map((answer, answerIndex) => {
-              const showCorrect = answered && answer === current.correct;
-              const showWrong = answered && answer === selected && answer !== current.correct;
-              const faded = answered && !showCorrect && !showWrong;
-              return (
+          {!answered && <div className="answer-list">
+            {current.choices.map((answer, answerIndex) => (
                 <button
-                  className={`answer-button ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''} ${faded ? 'faded' : ''}`}
-                  disabled={answered}
+                  className="answer-button"
                   key={answer}
                   type="button"
                   onClick={() => chooseAnswer(answer)}
@@ -386,17 +377,29 @@ export default function Home() {
                   <span>{String.fromCharCode(65 + answerIndex)}</span>
                   <b>{answer}</b>
                 </button>
-              );
-            })}
-          </div>
+              ))}
+          </div>}
 
           {answered && (
             <>
-              <section className={`feedback ${isCorrect ? 'feedback-correct' : 'feedback-wrong'}`}>
+              <section className={`feedback ${isCorrect ? 'feedback-correct' : 'feedback-wrong'}`} role="status">
                 <p className="feedback-title">{isCorrect ? '正解です！' : 'あと少しです'}</p>
-                {!isCorrect && <p><strong>正答：</strong>{current.correct}</p>}
-                <p><strong>解説：</strong>{current.explanation}</p>
+                {!isCorrect && <p><strong>選んだ答え：</strong>{selected}</p>}
+                <p><strong>正答：</strong>{current.correct}</p>
               </section>
+              <div className="quiz-next-dock" aria-label="次の問題へ進む">
+                <span className="dock-count">{index + 1} / {session.length}問</span>
+                <button className="primary-button next-button" type="button" onClick={nextQuestion}>
+                  {index === session.length - 1 ? '結果を見る' : '次の問題へ'} →
+                </button>
+              </div>
+              <section className="quiz-explanation" aria-label="解説">
+                <h2>解説</h2><p>{current.explanation}</p>
+              </section>
+              <details className="answer-review">
+                <summary>4つの選択肢を見直す</summary>
+                <ol>{current.choices.map(answer => <li key={answer}><strong>{answer === current.correct ? '○ 正答：' : answer === selected ? '× 選択：' : ''}</strong>{answer}</li>)}</ol>
+              </details>
               {relatedStudy && (
                 <aside className="related-study" aria-label="関連するサクッとまとめ">
                   <span>サクッと補足</span>
@@ -410,11 +413,12 @@ export default function Home() {
             </>
           )}
 
-          {answered ? (
-            <button className="primary-button next-button" type="button" onClick={nextQuestion}>
-              {index === session.length - 1 ? '結果を見る' : '次の問題へ'}
-            </button>
-          ) : null}
+          <div className="quiz-secondary">
+            <p>第{current.lecture}回 · {current.category.replace('（講義資料外・出題指定）', '')}</p>
+            {activeProgress && <p className="round-status">{sessionScope}・{sessionRound}周目：{activeProgress.answeredIds.length} / {activeProgress.total}問 回答済み</p>}
+            {current.sourceType === 'exam-extra' && <div className="extra-badge">講義資料外・試験範囲指定</div>}
+            {storageError && <p role="alert">学習記録を保存できません。ブラウザの保存設定や空き容量を確認してください。</p>}
+          </div>
           <button className="text-button" type="button" onClick={goHome}>保存して中断する</button>
         </section>
       </main>

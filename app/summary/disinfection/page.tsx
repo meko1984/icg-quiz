@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import StudyPage from '../../components/StudyPage';
 import styles from './page.module.css';
 
@@ -102,6 +103,7 @@ export default function Disinfection() {
   return (
     <StudyPage title="消毒薬の水準と使い分け">
       <p className="lead">先に<strong>器材がどこに触れるか</strong>を確認し、必要な処理を決めます。<br />薬剤名だけで覚えず、対象と水準をつなげましょう。</p>
+      <aside className="takeaway"><h2>消毒前の洗浄も確認します</h2><p>洗浄剤で汚れを除去し、汚染したクロスや洗浄液で菌を広げないようにします。希釈・温度・時間・材質・すすぎ・作業者の防護を確認してください。<Link href="/summary/cleaning/">洗浄剤と使用時の注意点 →</Link></p></aside>
 
       <section className="study-section" id="spaulding" aria-labelledby="spaulding-title">
         <h2 id="spaulding-title">器材のリスクと必要な処理</h2>
